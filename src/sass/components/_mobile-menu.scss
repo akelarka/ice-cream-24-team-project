@@ -2,7 +2,7 @@
   .mobile-menu {
     position: fixed;
     width: 100%;
-    height: 100%;
+    // height: 100%;
     z-index: 1000;
     top: 0;
     left: 0;
@@ -25,13 +25,13 @@
 
   .mobile-menu__container {
     position: relative;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    padding-left: 40px;
+    padding-top: 12px;
+    padding-bottom: 63px;
+    // padding-left: 40px;
     display: flex;
     flex-direction: column;
     height: 100%;
-    justify-content: space-between;
+    // justify-content: space-between;
   }
 
   .mobile-menu__close-btn {
@@ -47,22 +47,27 @@
   .mobile-menu__close-icone {
     &:hover,
     &:focus {
-      fill: var(--accent-color);
+      fill: red;
     }
-
+    fill: #ffffff;
     transition: fill var(--transition-value);
   }
 
-  .mobile-menu__menu-item {
-    margin-bottom: 32px;
+  .mobile-menu__menu {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 52px;
   }
 
   .mobile-menu__menu-link {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.175;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.22;
     letter-spacing: 0.02em;
-    color: var(--first-text-color);
+    color: #fcfcfc;
     transition: color var(--transition-value);
 
     &:hover,
@@ -70,6 +75,25 @@
     &.current {
       color: var(--accent-color);
     }
+  }
+
+  .mobile-burg-btn {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .mobile-btn {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    /* letter-spacing: .06em; */
+    margin: 0 auto;
+    color: #000000;
+    background: #f8d24e;
+    border-radius: 10px;
+    padding: 12px 34px;
+    align-items: center;
   }
 
   .mobile-menu__contact {
