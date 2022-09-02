@@ -1,0 +1,175 @@
+
+/*Кнопка с темным текстом и темной стрелкой использовать для (Buy now, Read more)*/ 
+.button-arrow {
+    position: relative;
+    min-width: 150px;
+    height: 42px;
+    padding: 12px 54px 12px 34px;
+    
+    border: none;
+    background: #F8D24E;
+    border-radius: 10px;
+   
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    text-align: center;
+    color: #000000;
+
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &::after {
+        content: "";
+        position: absolute;
+        transform: translate(-33px, 16px);
+        top: 0;
+        right: 0;
+        
+        width: 7px;
+        height: 11px;
+        
+        background-image: url(../images/arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    &:hover,
+    &:focus {
+        background: #0A8817;
+    }
+
+}
+
+
+
+/*Кнопка рамкой использовать для (Products)*/
+.button-border {
+    width: 62px;
+    height: 24px;
+    padding: 7px 14px;
+
+    background: #AEC6A5;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.125;
+    text-align: center;
+    color: #000000;
+
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+        border: 2px solid #0A8817;
+    }
+}
+@media screen and(min-width:1199px) {
+    .button-border{
+    width: 138px;
+    height: 42px;
+    padding: 12px 34px;
+
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    }
+}
+
+/*Кнопка с белым текстом и белой стрелкой использовать для (Franchise)*/
+.button-arrow-border {
+
+    position: relative;
+    width: 161px;
+    height:49px;
+    padding: 12px 54px 12px 34px; 
+
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: #fff;
+
+    border: 2px solid #F8D24E;
+    background: #AEC6A5;
+    border-radius: 10px;
+
+    
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &::after {
+        content: "";
+        position: absolute;
+        transform: translate(-33px, 18px);
+        top: 0;
+        right: 0;
+        width: 7px;
+        height: 11px;
+        background-image: url(../images/arrow-white.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    &:hover,
+    &:focus {
+        border: 2px solid #0A8817;
+    }
+    
+}
+
+@media screen and(min-width:768px) {
+    .button-arrow-border {
+    height: 42px;
+    min-width: 150px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    &::after {
+            content: "";
+            position: absolute;
+            transform: translate(-33px, 16px);
+    }
+}
+}
+
+
+/*Кнопка текстом использовать для (How it’s made?)*/
+.button-text{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 2;
+    text-align: center;
+    
+    color: #F8D24E;
+    background: inherit;
+    text-decoration-line: underline;
+    border: none;
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+        color: #0A8817;
+        }
+}
+
+@media screen and(min-width:1200px) {
+    .button-text {
+        font-size: 14px;
+        line-height: 1.21;
+    }
+}
