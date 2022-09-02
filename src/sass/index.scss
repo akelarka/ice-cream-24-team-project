@@ -1,30 +1,29 @@
 // All "Base" specific SASS partials
 
-@import "./base/common";
-@import "./base/base";
-@import "./base/container";
-@import "./base/variables";
+@import './base/common';
+@import './base/base';
+@import './base/container';
+@import './base/variables';
 
 // All "Components" specific SASS partials
 
-@import "./components/footer";
-@import "./components/header";
+@import './components/footer';
+@import './components/header';
+@import './components/mobile-menu';
 
 // All "Module" specific SASS partials
-
-@import "./module/modal";
+@import './module/modal';
 
 // All "Utils" specific SASS partials
 
-@import "./utils/visually-hidden";
+@import './utils/visually-hidden';
 
 // All "Layout" specific SASS partials
 
-@import "./layout/hero";
-@import "./layout/products";
-@import "./layout/about";
-@import "./layout/advantages";
-@import "./layout/gallery";
-@import "./layout/customer-reviews";
-@import "./layout/contacts";
-
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer-reviews';
+@import './layout/contacts';

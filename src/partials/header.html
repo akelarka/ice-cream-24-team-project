@@ -1,1 +1,152 @@
-<header></header>
+<header class="header">
+  <div class="container header-flex">
+    <nav class="header-nav">
+      <a class="logo link" href="#" lang="en">
+        <!-- <svg class="logo-svg" width="48" height="44"> -->
+        <svg class="logo-svg">
+          <use href="../src/images/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <ul class="list header-nav__first">
+        <li class="header-nav__item">
+          <a class="header-nav__link link" href="#">Home</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link link" href="#">About us</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link link" href="#">How it’s made?</a>
+        </li>
+
+        <li class="header-nav__item">
+          <a class="header-nav__link link" href="#">Our products</a>
+        </li>
+
+        <li class="header-nav__item">
+          <a class="header-nav__link link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" class="mobile-menu-open" data-menu-open>
+      <svg class="mobile-menu-svg" width="20" height="12">
+        <use href="../src/images/sprite.svg#burger"></use>
+      </svg>
+    </button>
+    <ul class="list header-contact">
+      <li class="header-contact__item">
+        <a
+          class="header-contact__link link"
+          href="mailto:info@info@devstudio.com"
+        >
+          <svg class="header-contact__icon">
+            <!-- <use href="./images/symbol-defs.svg#icon-envelope"></use> -->
+          </svg>
+          info@devstudio.com
+        </a>
+      </li>
+      <li>
+        <a class="header-contact__link link" href="tel:+380961111111">
+          <svg class="header-contact__icon">
+            <!-- <use href="./images/symbol-defs.svg#icon-smartphone"></use> -->
+          </svg>
+          +38 096 111 11 11
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="mobile-menu" data-menu>
+    <div class="container mobile-menu__container">
+      <button type="button" class="mobile-menu__close-btn" data-menu-close>
+        <svg class="mobile-menu__close-icone" width="32" height="32">
+          <use href="../src/images/sprite.svg#close-button"></use>
+        </svg>
+      </button>
+
+      <ul class="list mobile-menu__menu">
+        <li class="mobile-menu__menu-item">
+          <a class="mobile-menu__menu-link link" href="#">Home </a>
+        </li>
+        <li class="mobile-menu__menu-item">
+          <a class="mobile-menu__menu-link link" href="#">About us</a>
+        </li>
+        <li class="mobile-menu__menu-item">
+          <a class="mobile-menu__menu-link link" href="#">How it’s made?</a>
+        </li>
+        <li class="mobile-menu__menu-item">
+          <a class="mobile-menu__menu-link link" href="#">Our products</a>
+        </li>
+        <li class="mobile-menu__menu-item">
+          <a class="mobile-menu__menu-link link" href="#">Contact</a>
+        </li>
+      </ul>
+      <div>
+        <ul class="list mobile-menu__contact">
+          <li class="mobile-menu__contact-item">
+            <a
+              class="mobile-menu__contact-adress link"
+              href="tel:+380961111111"
+            >
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="mobile-menu__contact-item">
+            <a
+              class="mobile-menu__contact-mail link"
+              href="mailto:info@info@devstudio.com"
+            >
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__social list">
+          <li class="mobile-menu__social-item">
+            <a
+              class="mobile-menu__social-link link"
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram
+            </a>
+          </li>
+
+          <li class="mobile-menu__social-item-line"></li>
+
+          <li class="mobile-menu__social-item">
+            <a
+              class="mobile-menu__social-link link"
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twitter
+            </a>
+          </li>
+
+          <li class="mobile-menu__social-item-line"></li>
+
+          <li class="mobile-menu__social-item">
+            <a
+              class="mobile-menu__social-link link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook
+            </a>
+          </li>
+
+          <li class="mobile-menu__social-item-line"></li>
+
+          <li class="mobile-menu__social-item">
+            <a
+              class="mobile-menu__social-link link"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
