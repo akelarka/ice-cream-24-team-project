@@ -16,7 +16,12 @@
 }
 
 .mobile-menu-svg {
-  fill: #fff;
+  &:hover,
+  &:focus {
+    fill: #f8d24e;
+  }
+  fill: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-open {
@@ -34,10 +39,6 @@
   }
 
   .header-nav__first {
-    display: none;
-  }
-
-  .header-contact {
     display: none;
   }
 
@@ -64,34 +65,6 @@
   .header-nav__first {
     display: none;
   }
-
-  .header-contact__icon {
-    max-width: 14px;
-    height: 14px;
-    margin-right: 8px;
-    fill: currentColor;
-  }
-
-  .header-contact__item {
-    display: inline;
-  }
-
-  .header-contact__link {
-    display: inline-flex;
-    align-items: center;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
-    color: var(--second-text-color);
-    transition: color var(--transition-value);
-
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-      fill: var(--accent-color);
-    }
-  }
 }
 // 1200px - max
 @media screen and (min-width: 1200px) {
@@ -111,7 +84,7 @@
     font-weight: 700;
     line-height: 1.25;
     color: #fcfcfc;
-    transition: color var(--transition-value);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus,

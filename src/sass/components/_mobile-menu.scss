@@ -5,7 +5,7 @@
   z-index: 1000;
   top: 0;
   left: 0;
-  left: 0;
+  // left: 0;
   left: 100%;
   background: #85a279;
 
@@ -14,6 +14,14 @@
   pointer-events: none;
   // transition: opacity 1750ms cubic-bezier(0.4, 0, 0.2, 1),
   //   visibility 1750ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  // -webkit-transition: left 3.3s;
+  // -moz-transition: left 3.3s;
+  // transition: left 3.3s;
+
+  // -webkit-transform: translateX(320px);
+  // -moz-transform: translateX(320px);
+  // transform: translateX (320px);
 
   // -webkit-transition: left 3.3s;
   // -moz-transition: left 3.3s;
@@ -50,18 +58,16 @@
   border: none;
   padding: 0;
   line-height: 0;
-
-  transition: left 1000ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu__close-icon {
-  // &:hover,
-  // &:focus {
-  //   fill: red;
-  // }
+  &:hover,
+  &:focus {
+    fill: #f8d24e;
+  }
+
   fill: #ffffff;
-  // transition: fill var(--transition-value);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu__menu {
@@ -78,13 +84,14 @@
   font-size: 32px;
   line-height: 1.22;
   color: #fcfcfc;
-  // transition: color var(--transition-value);
 
-  // &:hover,
-  // &:focus,
-  // &.current {
-  //   color: var(--accent-color);
-  // }
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &.current {
+    color: #f8d24e;
+  }
 }
 
 .mobile-burg-btn {
