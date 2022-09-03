@@ -17,18 +17,86 @@
 
 .contacts-card__suptitle {
   display: inline-block;
+  margin-bottom: 20px;
   padding: 0 22px;
+
+  font-family: var(--primary-font-family);
+  font-weight: var(--customer-data-font-weight);
   text-align: center;
-  background-color: var(--btn-default-color);
-  color: var(--primary-text-color);
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
   font-size: 12px;
-  line-height: 186%;
-  letter-spacing: 0.04em;
+  line-height: 1.8333;
+  letter-spacing: var(--secondary-letter-spacing);
   text-transform: uppercase;
   border-radius: 4px;
+
+  background-color: var(--btn-default-color);
+  color: var(--primary-text-color);
+}
+
+.contacts-card__title {
+  margin-bottom: 8px;
+
+  font-family: var(--primary-font-family);
+  font-weight: var(--customer-data-font-weight);
+  font-size: 12px;
+  line-height: 1.8333;
+  letter-spacing: var(--secondary-letter-spacing);
+
+  color: var(--accent-text-color);
+}
+
+.contacts-card__address {
+  margin-bottom: 24px;
+  font-family: var(--primary-font-family);
+  font-weight: var(--customer-data-font-weight);
+  font-size: 12px;
+  line-height: 1.8333;
+  letter-spacing: 0.04em;
+
+  color: var(--contacts-accent-text-color);
+}
+
+.contacts-card__shedule-list {
+  padding: 24px 0;
+  border-top: 1px solid var(--decorate-line-color);
+  border-bottom: 1px solid var(--decorate-line-color);
+}
+
+.shedule-list__item {
+  margin-bottom: 8px;
+}
+
+.shedule-list__date {
+  font-family: var(--primary-font-family);
+  font-weight: var(--customer-data-font-weight);
+  font-size: 12px;
+  line-height: 1.8333;
+  letter-spacing: var(--secondary-letter-spacing);
+
+  color: var(--accent-text-color);
+}
+
+.shedule-list__time {
+  font-family: var(--primary-font-family);
+  font-weight: var(--customer-data-font-weight);
+  font-size: 12px;
+  line-height: 1.8333;
+  letter-spacing: var(--secondary-letter-spacing);
+
+  color: var(--btn-disabled-color);
+}
+
+.contacts-card__contacts-list {
+  margin-top: 24px;
+}
+
+.contacts-list__link {
+  font-family: var(--primary-font-family);
+  font-weight: var(--customer-data-font-weight);
+  font-size: 12px;
+  line-height: 1.5;
+
+  color: var(--card-description-color);
 }
 
 @media screen and (max-width: 767px) {
