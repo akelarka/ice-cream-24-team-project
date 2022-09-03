@@ -47,7 +47,7 @@
   line-height: 0;
 }
 
-.mobile-menu__close-icone {
+.mobile-menu__close-icon {
   // &:hover,
   // &:focus {
   //   fill: red;
@@ -100,9 +100,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  .mobile-btn {
-    // display: none;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -138,5 +135,10 @@
 @media screen and (min-width: 1200px) {
   .mobile-menu {
     display: none;
+  }
+
+  .logo-svg {
+    width: 60px;
+    height: 65px;
   }
 }
