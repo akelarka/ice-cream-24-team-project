@@ -147,6 +147,7 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         background-image: url(../images/products/ice-cream-768@2x.webp);
+        background-size: 200px 200px;
         }
     }
 }
@@ -188,11 +189,22 @@
             width: 200px;
             top: -112px;
             left: 14px;
-            background-image: url(../images/products/ice-coffee-768@1x.webp);
+            
         }
     
 }
+@media screen and (min-width: 768px) {
+    .product-list__subtitle.ice-coffee::after {
+        background-image: url(../images/products/ice-coffee-768@1x.webp);
 
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/products/ice-coffee-768@2x.webp);
+            background-size: 200px 200px;
+        }
+    }
+}
 .product-list__subtitle.milkshakes::before {
     content: " ";
     background-repeat: no-repeat;
@@ -229,10 +241,21 @@
         width: 200px;
         top: -112px;
         left: 14px;
-        background-image: url(../images/products/milkshakes-768@1x.webp);
+        
         }
 }
+@media screen and (min-width: 768px) {
+    .product-list__subtitle.milkshakes::after {
+        background-image: url(../images/products/milkshakes-768@1x.webp);
 
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/products/milkshakes-768@2x.webp);
+            background-size: 200px 200px;
+        }
+    }
+}
 .product-description {
     font-family: 'Montserrat';
     font-style: normal;
