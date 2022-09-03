@@ -16,8 +16,19 @@
 }
 
 .contacts-card__suptitle {
+  display: inline-block;
+  padding: 0 22px;
+  text-align: center;
   background-color: var(--btn-default-color);
   color: var(--primary-text-color);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 767px) {
