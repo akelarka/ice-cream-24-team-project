@@ -48,29 +48,29 @@
 }
 
 // 768px - max
+@media screen and (min-width: 768px) {
+  .mobile-menu-open {
+    margin-right: 32px;
+  }
 
-.mobile-menu-open {
-  margin-right: 32px;
+  .header {
+    padding-top: 20px;
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-nav__first {
+    display: none;
+  }
+
+  .header-burg-and-btn {
+    display: flex;
+    align-items: center;
+  }
 }
-
-.header {
-  padding-top: 20px;
-}
-
-.header-nav {
-  display: flex;
-  align-items: center;
-}
-
-.header-nav__first {
-  display: none;
-}
-
-.header-burg-and-btn {
-  display: flex;
-  align-items: center;
-}
-
 // 1200px - max
 @media screen and (min-width: 1200px) {
   .header {
