@@ -1,10 +1,11 @@
 
-/*Кнопка с темным текстом и темной стрелкой использовать для (Buy now, Read more)*/ 
+/*Кнопка с темным текстом и темной стрелкой использовать для (Buy now, Read more, Our Locations)*/ 
 .button-arrow {
     position: relative;
-    min-width: 150px;
+    
+    min-width: 152px;
     height: 42px;
-    padding: 12px 54px 12px 34px;
+    padding: 12px 52px 12px 34px;
     
     border: none;
     background: #F8D24E;
@@ -13,90 +14,54 @@
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 14px;
-    line-height: 1.21;
+    line-height: 1.29;
     text-align: center;
     color: #000000;
 
     transition-property: background;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
     &::after {
         content: "";
         position: absolute;
-        transform: translate(-33px, 16px);
+        transform: translate(-34px, 16px);
         top: 0;
         right: 0;
         
-        width: 7px;
-        height: 11px;
+        width: 12px;
+        height: 12px;
         
-        background-image: url(../images/arrow.svg);
+        background-image: url(../images/arrow-black.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
         background: #0A8817;
     }
-
-}
-
-
-
-/*Кнопка рамкой использовать для (Products)*/
-.button-border {
-    width: 62px;
-    height: 24px;
-    padding: 7px 14px;
-
-    background: #AEC6A5;
-    border: 2px solid #F8D24E;
-    border-radius: 10px;
-    
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 1.125;
-    text-align: center;
-    color: #000000;
-
-    transition-property: border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-    &:hover,
-    &:focus {
-        border: 2px solid #0A8817;
+    &:focus{
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 1.2;
     }
+
 }
-@media screen and(min-width:1199px) {
-    .button-border{
-    width: 138px;
-    height: 42px;
-    padding: 12px 34px;
+
+
+/*Кнопка с белым текстом и белой стрелкой использовать для (Franchise)*/
+.button-arrow-border {
+    position: relative;
+   
+    min-width: 196px;
+    height:42px;
+    padding: 12px 64px 12px 46px; 
 
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 14px;
-    line-height: 1.21;
-    }
-}
-
-/*Кнопка с белым текстом и белой стрелкой использовать для (Franchise)*/
-.button-arrow-border {
-
-    position: relative;
-    width: 161px;
-    height:49px;
-    padding: 12px 54px 12px 34px; 
-
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
+    line-height: 1.29;
     text-align: center;
     color: #fff;
 
@@ -111,39 +76,81 @@
     &::after {
         content: "";
         position: absolute;
-        transform: translate(-33px, 18px);
+        transform: translate(-46px, 16px);
         top: 0;
         right: 0;
-        width: 7px;
-        height: 11px;
-        background-image: url(../images/arrow-white.svg);
+        width: 12px;
+        height: 12px;
+        background-image: url(../images/arrow-white-new.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
     }
 
-    &:hover,
-    &:focus {
+    &:hover{
         border: 2px solid #0A8817;
+    }
+    &:focus{
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 1.2;
     }
     
 }
 
-@media screen and(min-width:768px) {
-    .button-arrow-border {
-    height: 42px;
-    min-width: 150px;
+/*Кнопка рамкой использовать для (Products)*/
+.button-border {
+
+    min-width: 62px;
+    height: 24px;
+    padding: 6px 8px;
+
+    background: #AEC6A5;
+    border: 2px solid #F8D24E;
+    border-radius: 8px;
+
+
+    font-family: 'Montserrat';
     font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    &::after {
-            content: "";
-            position: absolute;
-            transform: translate(-33px, 16px);
+    font-size: 8px;
+    line-height: 1.22;
+    text-align: center;
+    color: #000000;
+
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border: 2px solid #0A8817;
+        font-size: 9px;
     }
 }
-}
 
+@media screen and(min-width:1199px) {
+    .button-border {
+        min-width: 134px;
+        height: 42px;
+        padding: 12px 34px;
+
+
+        font-size: 14px;
+        line-height: 1.29;
+        border-radius: 10px;
+
+        &:hover {
+            border: 2px solid #0A8817;
+            font-size: 14px;
+        }
+
+        &:focus {
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 1.2;
+        }
+    }
+}
 
 /*Кнопка текстом использовать для (How it’s made?)*/
 .button-text{
@@ -162,8 +169,11 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
-        &:focus {
+        &:focus{
         color: #0A8817;
+        font-weight: 700;
+        font-size: 9px;
+        line-height: 1.22;
         }
 }
 
@@ -171,5 +181,15 @@
     .button-text {
         font-size: 14px;
         line-height: 1.21;
+        &:hover{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.21;
+         }
+         &:focus{
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 1.2;
+        }
     }
 }
