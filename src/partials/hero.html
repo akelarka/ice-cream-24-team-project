@@ -7,12 +7,14 @@
       <button class="hero-btn-set__btn" type="button">Products</button>
       <a class="hero-btn-set__link" scr="#">How it's made?</a>
     </div>
-    <p class="tagline tagline-img">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-      do eiusmod tempor
-      incididunt ut labore et</p>
-    <a scr="https://www.google.com/"><svg class="arrow">
-        <use href="./images/sprite.svg#arrow" width="40" class=""></use>
-      </svg></a>
+    <div class="hero__description-set">
+      <p class="tagline">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+        do eiusmod tempor
+        incididunt ut labore et</p>
+      <a scr="https://www.google.com/"><svg class="arrow">
+          <use href="./images/sprite.svg#arrow" width="40" class=""></use>
+        </svg></a>
+    </div>
     <ul class="list department">
       <li class="department-namber">16</li>
       <li class="department-name">cafes</li>
@@ -20,9 +22,6 @@
       <li class="department-name">food trucks</li>
     </ul>
     <picture class="ice-cream-plate-picture">
-      <!-- <source srcset="./images/hero/ice-cream-plate-480@1x.webp 1x, ./images/hero/ice-cream-plate-480@2x.webp 2x,
-                            ./images/hero/ice-cream-plate-480@4x.webp 3x" media="(max-width: 768px)"
-        type="image/webp" /> -->
       <source srcset="./images/hero/ice-cream-plate-768@1x.webp 1x, ./images/hero/ice-cream-plate-768@2x.webp 2x,
                                   ./images/hero/ice-cream-plate-768@3x.webp 3x" media="(max-width: 1199px)"
         type="image/webp" />
@@ -34,17 +33,17 @@
              ./images/hero/ice-cream-plate-1200@3x.webp 3x" media="(min-width: 1200px)" type="image/webp" />
     </picture>
 
-    <picture class="main-ice-cream-picture">
-      <!-- <source srcset="./images/hero/ice-cream-plate-480@1x.webp 1x, ./images/hero/ice-cream-plate-480@2x.webp 2x,
-                                ./images/hero/ice-cream-plate-480@4x.webp 3x" media="(max-width: 768px)"
-            type="image/webp" /> -->
+    <picture>
+      <source srcset="./images/hero/main-ice-cream-480@1x.webp 1x, ./images/hero/main-ice-cream-480@1x.webp 3x,
+                                ./images/hero/main-ice-cream-480@3x.webp  3x" media="(max-width: 767px)"
+        type="image/webp" />
       <source srcset="./images/hero/main-ice-cream-768@1x.webp 1x, ./images/hero/main-ice-cream-768@2x.webp 2x,
-                                      ./images/hero/main-ice-cream-768@3x.webp 3x" media="(max-width: 1199px)"
+                                      ./images/hero/main-ice-cream-768@3x.webp 3x" media="(max-width: 768px)"
         type="image/webp" />
       <source srcset="./images/hero/main-ice-cream-1200@1x.webp 1x, ./images/hero/main-ice-cream-1200@2x.webp 2x,
-                                            ./images/hero/main-ice-cream-1200@3x.webp 3x" media="(max-width: 1199px)"
+                                            ./images/hero/main-ice-cream-1200@3x.webp 3x" media="(min-width: 1200px)"
         type="image/webp" />
-      <img src="./images/hero/main-ice-cream-1200@1x.webp" alt="main ice cream " srcset="./images/hero/main-ice-cream-1200@1x.webp 1x,
+      <img class="main-ice-cream-picture" src="./images/hero/main-ice-cream-1200@1x.webp" alt="main ice cream " srcset="./images/hero/main-ice-cream-1200@1x.webp 1x,
                  ./images/hero/main-ice-cream-1200@2x.webp 2x,
                  ./images/hero/main-ice-cream-1200@3x.webp 3x" media="(min-width: 1200px)" type="image/webp" />
     </picture>
