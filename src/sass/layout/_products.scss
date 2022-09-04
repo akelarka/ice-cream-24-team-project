@@ -443,6 +443,8 @@
     width: 60px;
     height: 15px;
     fill: #fff;
+    transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .product-btn {
@@ -460,7 +462,7 @@
     pointer-events: none;
 }
 
-.mob-menu {
+.prod-menu {
     
     display: flex;
     align-items: center;
@@ -474,10 +476,12 @@
     
     border-radius: 24px;
 
-    transform: translateZ(101%);
-        transition-property: transform;
-        transition-duration: 300ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
+    
+
     background-color: palegoldenrod;
 }
 
@@ -492,12 +496,14 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     // transition-property: fill;
-    //     transition-duration: 250ms;
-    //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 1000ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
+        
 
     
 }
-.close-menu-btn {
+.close-prod-btn {
         position: absolute;
         top: 10px;
         right: 10px;
@@ -505,6 +511,8 @@
         height: 30px;
         background-color: transparent;
         border-color: transparent;
+        transition-duration: 300ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         
             
             
@@ -516,7 +524,7 @@
         fill: #fff;
     }
 }
-.mob-text {
+.product-text {
     display: block;
     font-family: 'Montserrat';
     font-style: normal;
