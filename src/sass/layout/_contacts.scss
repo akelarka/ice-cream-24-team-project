@@ -1,28 +1,15 @@
 .contacts {
   background-color: var(--main-background-color);
-  background-image: url('../images/ice-cream-background/jpg/ice-cream-background-bottom/480/ice-cream-background-bottom-480@1x.jpg');
-  background-position: bottom 1060px right 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  @media screen and (min-width: 768px) {
-    & {
-      background-image: url('../images/ice-cream-background/jpg/ice-cream-background-bottom/768/ice-cream-background-bottom-768@1x.jpg');
-      background-position: bottom 320px right 0;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    & {
-      background-image: url('../images/ice-cream-background/jpg/ice-cream-background-bottom/1200/ice-cream-background-bottom-1200@1x.jpg');
-      background-position: bottom 600px right 0;
-    }
-  }
 }
 
 .contacts__container {
+  position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.contacts__list {
+  position: absolute;
 }
 
 .contacts-card {
@@ -121,6 +108,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 32px;
+  padding-top: 960px;
   gap: 16px;
 }
 
@@ -190,6 +178,10 @@
   .contacts-card__contacts-list {
     margin-top: 32px;
   }
+
+  .contacts-btn-list {
+    padding-top: 283px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -229,5 +221,9 @@
   .contacts-list__link {
     font-size: 16px;
     line-height: 1.8125;
+  }
+
+  .contacts-btn-list {
+    padding-top: 506px;
   }
 }
