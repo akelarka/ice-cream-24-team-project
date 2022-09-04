@@ -1,33 +1,41 @@
 .products {
     background-image: url(../images/ice-cream-background/svg/ice-cream-background-top-480.svg);
+    background-repeat: no-repeat;
+        background-size: 100%;
     
     @media 
         (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) 
-        {background-image: url(../images/ice-cream-background/svg/ice-cream-background-top-480.svg);   
+        {background-image: url(../images/ice-cream-background/svg/ice-cream-background-top-480.svg);
+            background-repeat: no-repeat;
+                background-size: 100%;
         }
         
 }
 
 @media screen and (min-width: 768px) { 
         .products {background-image: url(../images/ice-cream-background/svg/ice-cream-background-top-768.svg);
-            background-repeat: round;
+            background-repeat: no-repeat;
+                background-size: 100%;
         
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi), (min-resolution: 2dppx) {
                 background-image: url(../images/ice-cream-background/svg/ice-cream-background-top-768.svg);
-                background-repeat: round;
+                background-repeat: no-repeat;
+                    background-size: 100%;
             }}
     }    
 
 @media screen and (min-width: 1200px) { 
         .products {background-image: url(../images/ice-cream-background/svg/ice-cream-background-top-1200.svg);
             background-repeat: no-repeat;
+            background-size: 100%;
         
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: url(../images/ice-cream-background/svg/ice-cream-background-top-1200.svg);
-                background-repeat: no-repeat;
+                background-repeat:no-repeat;
+                background-size: 100%;
             }}
     }    
 
