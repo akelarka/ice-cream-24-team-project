@@ -12,24 +12,6 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  // transition: opacity 1750ms cubic-bezier(0.4, 0, 0.2, 1),
-  //   visibility 1750ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  // -webkit-transition: left 3.3s;
-  // -moz-transition: left 3.3s;
-  // transition: left 3.3s;
-
-  // -webkit-transform: translateX(320px);
-  // -moz-transform: translateX(320px);
-  // transform: translateX (320px);
-
-  // -webkit-transition: left 3.3s;
-  // -moz-transition: left 3.3s;
-  // transition: left 3.3s;
-
-  // -webkit-transform: translateX(320px);
-  // -moz-transform: translateX(320px);
-  // transform: translateX (320px);
 }
 
 .mobile-menu.is-open {
@@ -99,19 +81,6 @@
   margin-top: 40px;
 }
 
-.mobile-btn {
-  font-family: 'Montserrat';
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.21;
-  // margin: 0 auto;
-  color: #000000;
-  background: #f8d24e;
-  border-radius: 10px;
-  padding: 12px 34px;
-  border: none;
-}
-
 @media screen and (max-width: 767px) {
 }
 
@@ -137,10 +106,6 @@
 
   .mobile-burg-btn {
     display: none;
-  }
-
-  .mobile-btn {
-    margin: auto 0;
   }
 }
 
