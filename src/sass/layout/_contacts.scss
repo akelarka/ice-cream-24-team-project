@@ -1,0 +1,229 @@
+.contacts {
+  background-color: var(--main-background-color);
+}
+
+.contacts__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__list {
+  position: absolute;
+}
+
+.contacts-card {
+  padding: 40px 32px;
+  background-color: var(--primary-text-color);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+.contacts-card__suptitle {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 0 23px;
+
+  font-family: var(--primary-font-family);
+  font-weight: var(--customer-data-font-weight);
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.8333;
+  letter-spacing: var(--secondary-letter-spacing);
+  text-transform: uppercase;
+  border-radius: 4px;
+
+  background-color: var(--btn-default-color);
+  color: var(--primary-text-color);
+}
+
+.contacts-card__title {
+  margin-bottom: 8px;
+
+  font-family: var(--primary-font-family);
+  font-weight: var(--customer-data-font-weight);
+  font-size: 12px;
+  line-height: 1.8333;
+  letter-spacing: var(--secondary-letter-spacing);
+
+  color: var(--accent-text-color);
+}
+
+.contacts-card__address {
+  margin-bottom: 24px;
+  font-family: var(--primary-font-family);
+  font-weight: var(--customer-data-font-weight);
+  font-size: 12px;
+  line-height: 1.8333;
+  letter-spacing: 0.04em;
+
+  color: var(--contacts-accent-text-color);
+}
+
+.contacts-card__shedule-list {
+  padding: 24px 0;
+  border-top: 1px solid var(--decorate-line-color);
+  border-bottom: 1px solid var(--decorate-line-color);
+}
+
+.shedule-list__item {
+  margin-bottom: 8px;
+}
+
+.shedule-list__date {
+  font-family: var(--primary-font-family);
+  font-weight: var(--customer-data-font-weight);
+  font-size: 12px;
+  line-height: 1.8333;
+  letter-spacing: var(--secondary-letter-spacing);
+
+  color: var(--accent-text-color);
+}
+
+.shedule-list__time {
+  font-family: var(--primary-font-family);
+  font-weight: var(--customer-data-font-weight);
+  font-size: 12px;
+  line-height: 1.8333;
+  letter-spacing: var(--secondary-letter-spacing);
+
+  color: var(--btn-disabled-color);
+}
+
+.contacts-card__contacts-list {
+  margin-top: 24px;
+}
+
+.contacts-list__link {
+  font-family: var(--primary-font-family);
+  font-weight: var(--customer-data-font-weight);
+  font-size: 12px;
+  line-height: 1.5;
+
+  color: var(--card-description-color);
+}
+
+.contacts-btn-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  padding-top: 960px;
+  gap: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -8px;
+  }
+
+  .contacts-card {
+    width: calc((100% - 8px * 6) / 3);
+    margin: 8px;
+    padding: 40px 24px;
+  }
+
+  .contacts-card__suptitle {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.875;
+
+    color: var(--card-description-color);
+  }
+
+  .contacts-btn-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contacts-card__title {
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.8571;
+  }
+  .contacts-card__address {
+    margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.8571;
+  }
+  .contacts-card__shedule-list {
+    padding: 32px 0;
+  }
+
+  .shedule-list__date {
+    font-size: 14px;
+    line-height: 1.8571;
+  }
+
+  .shedule-list__time {
+    font-size: 14px;
+    line-height: 1.8571;
+
+    color: #907e82;
+  }
+
+  .contacts-list__link {
+    font-size: 14px;
+    line-height: 1.8571;
+  }
+
+  .contacts-card__contacts-list {
+    margin-top: 32px;
+  }
+
+  .contacts-btn-list {
+    padding-top: 283px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__list {
+    margin: -16px;
+  }
+
+  .contacts-card {
+    width: calc((100% - 16px * 6) / 3);
+    margin: 16px;
+    padding: 40px;
+  }
+
+  .contacts-card__title {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.875;
+  }
+
+  .contacts-card__address {
+    font-size: 16px;
+    line-height: 1.8125;
+  }
+
+  .shedule-list__date {
+    font-size: 16px;
+    line-height: 1.875;
+  }
+
+  .shedule-list__time {
+    font-size: 16px;
+    line-height: 1.875;
+
+    color: var(--btn-disabled-color);
+  }
+
+  .contacts-list__link {
+    font-size: 16px;
+    line-height: 1.8125;
+  }
+
+  .contacts-btn-list {
+    padding-top: 506px;
+  }
+}
