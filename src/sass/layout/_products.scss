@@ -3,12 +3,12 @@
     background-repeat: no-repeat;
         background-size: 100%;
     
-    @media 
-        (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) 
-        {background-image: url(../images/ice-cream-background/svg/ice-cream-background-top-480.svg);
-            background-repeat: no-repeat;
-                background-size: 100%;
-        }
+    // @media 
+    //     (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) 
+    //     {background-image: url(../images/ice-cream-background/svg/ice-cream-background-top-480.svg);
+    //         background-repeat: no-repeat;
+    //             background-size: 100%;
+    //     }
         
 }
 
@@ -17,12 +17,13 @@
             background-repeat: no-repeat;
                 background-size: 100%;
         
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi), (min-resolution: 2dppx) {
-                background-image: url(../images/ice-cream-background/svg/ice-cream-background-top-768.svg);
-                background-repeat: no-repeat;
-                    background-size: 100%;
-            }}
+        // @media (min-device-pixel-ratio: 2),
+        // (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        //         background-image: url(../images/ice-cream-background/svg/ice-cream-background-top-768.svg);
+        //         background-repeat: no-repeat;
+        //             background-size: 100%;
+        //     }
+        }
     }    
 
 @media screen and (min-width: 1200px) { 
@@ -30,13 +31,14 @@
             background-repeat: no-repeat;
             background-size: 100%;
         
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(../images/ice-cream-background/svg/ice-cream-background-top-1200.svg);
-                background-repeat:no-repeat;
-                background-size: 100%;
-            }}
+            // @media (min-device-pixel-ratio: 2),
+            // (min-resolution: 192dpi),
+            // (min-resolution: 2dppx) {
+            //     background-image: url(../images/ice-cream-background/svg/ice-cream-background-top-1200.svg);
+            //     background-repeat:no-repeat;
+            //     background-size: 100%;
+            // }
+        }
     }    
 
 .pre-title {
@@ -483,12 +485,15 @@
     position: absolute;
     top: 0px;
     right: 0px;
-    width: 15px;
-    height: 15px;
-    fill: #000;
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
     background-color: transparent;
-    outline: solid 1px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    // transition-property: fill;
+    //     transition-duration: 250ms;
+    //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     
 }
@@ -500,8 +505,27 @@
         height: 30px;
         background-color: transparent;
         border-color: transparent;
+        
+            
+            
+}
+
+.close-icon {
+    &:hover,
+    &:focus {
+        fill: #fff;
+    }
 }
 .mob-text {
     display: block;
-    padding: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.76;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--card-description-color);
+    padding-left: 40px;
+    padding-right: 40px;
 }
