@@ -8,7 +8,7 @@
     padding: 12px 52px 12px 34px;
     
     border: none;
-    background: #F8D24E;
+    background: var(--btn-default-color);
     border-radius: 10px;
    
     font-family: 'Montserrat';
@@ -65,8 +65,8 @@
     text-align: center;
     color: #fff;
 
-    border: 2px solid #F8D24E;
-    background: #AEC6A5;
+    border: 2px solid var(--btn-default-color);
+    background: var(--main-background-color);
     border-radius: 10px;
 
     
@@ -105,8 +105,8 @@
     height: 24px;
     padding: 6px 8px;
 
-    background: #AEC6A5;
-    border: 2px solid #F8D24E;
+    background: var(--main-background-color);
+    border: 2px solid var(--btn-default-color);
     border-radius: 8px;
 
 
@@ -160,7 +160,7 @@
     line-height: 2;
     text-align: center;
     
-    color: #F8D24E;
+    color: var(--btn-default-color);
     background: inherit;
     text-decoration-line: underline;
     border: none;
