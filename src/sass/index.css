@@ -160,6 +160,11 @@ button {
   padding-top: 60px;
   padding-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-bottom: 40px;
+  }
+}
 
 .about__subtitel {
   font-family: var(--primary-font-family);
@@ -177,6 +182,11 @@ button {
     line-height: var(--products-suptitle-tablet-line-height);
     text-align: center;
     letter-spacing: var(--footer-accent-desktop-letter-spacing);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__subtitel {
+    font-size: var(--products-title-mobile-font-size);
   }
 }
 
@@ -198,6 +208,12 @@ button {
     margin-top: 12px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .about__titel {
+    font-size: var(--about-accent-mobile-font-size);
+    line-height: var(--products-title-desktop-line-height);
+  }
+}
 
 .about__content-wrapper {
   margin-top: 32px;
@@ -206,6 +222,12 @@ button {
   .about__content-wrapper {
     display: flex;
     margin-top: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__content-wrapper {
+    margin-top: 82px;
+    align-items: center;
   }
 }
 
@@ -225,6 +247,14 @@ button {
     border-radius: 166px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .about__img-background {
+    width: 500px;
+    height: 500px;
+    border-radius: 250px;
+    margin: 0;
+  }
+}
 
 .about__img {
   position: unset;
@@ -237,6 +267,11 @@ button {
     margin-top: 25.88px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .about__img {
+    margin-top: 39px;
+  }
+}
 
 .about__text-wrapper {
   width: 220px;
@@ -246,6 +281,12 @@ button {
 @media screen and (min-width: 768px) {
   .about__text-wrapper {
     width: 334px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__text-wrapper {
+    width: 463px;
+    margin-left: 100px;
   }
 }
 
@@ -265,6 +306,12 @@ button {
     line-height: var(--secondary-line-height);
   }
 }
+@media screen and (min-width: 1200px) {
+  .about__text {
+    font-size: var(--primary-font-size);
+    line-height: var(--products-suptitle-tablet-line-height);
+  }
+}
 
 @media screen and (max-width: 768px) {
   .about__text-item {
@@ -279,6 +326,12 @@ button {
 @media screen and (min-width: 768px) {
   .about__button {
     margin-top: 40px;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__button {
+    margin-top: 48px;
     margin-left: 0;
   }
 }/*# sourceMappingURL=index.css.map */
