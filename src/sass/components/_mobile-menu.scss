@@ -80,9 +80,7 @@
   margin-top: 40px;
 }
 
-@media screen and (max-width: 767px) {
-}
-
+// 768px - max
 @media screen and (min-width: 768px) {
   .mobile-menu__container {
     padding-top: 20px;
@@ -108,6 +106,7 @@
   }
 }
 
+// 1200px - max
 @media screen and (min-width: 1200px) {
   .mobile-menu {
     display: none;
