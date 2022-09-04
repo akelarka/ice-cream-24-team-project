@@ -1,0 +1,115 @@
+.footer {
+    background-color: #84A178;
+    & .container {
+      @media screen and (min-width: 1200) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .footer__titles {
+    max-width: 234px;
+    @media screen and (min-width: 768px) {
+      max-width: 340px;
+    }
+    @media screen and (min-width: 1200) {
+      max-width: 480px;
+    }
+    .footer__subtitle,
+    .footer__title {
+      text-align: start;
+      &:hover {
+        transform: scale(1.025);
+        transition: transform var(--transition-duration) linear;
+      }
+    }
+  }
+  
+  .socials_list {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 46px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 50px;
+    }
+  }
+  .socials__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  .socials__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    fill: #ffffff;
+    background-color: #131313;
+    transition: background-color var(--transition-duration) var(--transition-function);
+    @media screen and (min-width: 480px) {
+      width: 34px;
+      height: 34px;
+    }
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+  .socials__icon {
+    border-radius: 50%;
+    height: 19px;
+    @media screen and (min-width: 480) {
+      height: 20px;
+    }
+  }
+  .socials__telephone {
+    font-size: 12px;
+    font-weight: 700;
+    text-align: end;
+    color: var(--accent-color);
+    @media screen and (min-width: 480px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+    }
+  }
+  .socials__telephone-ivnite {
+    color: #ffffff;
+  }
+  .copyright {
+    margin-top: 43px;
+    border-top: 1px solid #e1e1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 480px) {
+      margin-top: 91px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-top: 98px;
+    }
+  }
+  .copyright__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.86;
+    color: var(--description-color);
+    padding-top: 22px;
+    padding-bottom: 25px;
+    @media screen and (max-width: 480px) {
+      max-width: 150px;
+    }
+    padding-top: 29px;
+    padding-bottom: 18px;
+    @media screen and (min-width: 480px) {
+      padding-top: 29px;
+      padding-bottom: 18px;
+    }
+    @media screen and (min-width: 768px) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }

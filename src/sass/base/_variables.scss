@@ -1,0 +1,83 @@
+:root {
+  //  ====================colors====================
+  --main-background-color: #84a178;
+
+  --card-icecream-background-color: #aec6a5;
+  --card-icecream-decorate-circle: #9cbe8f;
+  --card-icecoffee-background-color: #efd478;
+  --card-milkshakes-decorate-circle: #d5753f;
+
+  --btn-default-color: #f8d24e;
+  --btn-hover-color: #0a8817;
+  --btn-disabled-color: #ababab;
+
+  --primary-text-color: #fcfcfc;
+  --accent-text-color: #000;
+  --card-description-color: #131313;
+  --primary-title-color: #fff;
+  --contacts-accent-text-color: #d6936d;
+  --copyright-text-color: #7a7a7a;
+
+  --decorate-line-color: #e1e1e1;
+  --decorate-dots-disabled-color: #d9d9d9;
+
+  //   ====================fonts====================
+  --primary-font-family: 'Montserrat';
+  --secondary-font-family: 'Seymour One';
+
+  --primary-font-weight: 400;
+  --secondary-font-weight: 700;
+  --btn-font-weight: 600;
+  --products-suptitle-font-weight: 800;
+  --customer-data-font-weight: 500;
+
+  --primary-font-size: 14px;
+  --secondary-font-size: 16px;
+  --title-mobile-menu-font-size: 32px;
+  --input-font-size: 12px;
+  --hero-mobile-btn-font-size: 8px;
+  --title-hero-mobile-font-size: 26px;
+  --products-suptitle-mobile-font-size: 18px;
+  --products-title-mobile-font-size: 30px;
+  --card-title-font-size: 20px;
+  --about-accent-mobile-font-size: 36px;
+  --footer-accent-mobile-font-size: 34px;
+  --mobile-menu-title-tablet-font-size: 48px;
+  --products-suptitle-tablet-font-size: 22px;
+  --hero-title-desktop-font-size: 38px;
+  --about-accent-desktop-font-size: 58px;
+
+  --primary-line-height: 20px;
+  --secondary-line-height: 24px;
+  --card-description-mobile-line-height: 25px;
+  --title-line-height: 32px;
+  --title-hero-mobile-line-height: 33px;
+  --hero-mobile-btn-line-height: 9px;
+  --title-mobile-menu-line-height: 39px;
+  --btn-line-height: 15px;
+  --input-line-height: 17px;
+  --products-suptitle-line-height: 22px;
+  --products-title-line-height: 38px;
+  --about-up-description-line-height: 21px;
+  --about-bot-description-line-height: 19px;
+  --about-btn-line-height: 16px;
+  --about-accent-mobile-line-height: 42px;
+  --customer-review-line-height: 31px;
+  --customer-data-line-height: 37px;
+  --footer-accent-mobile-line-height: 41px;
+  --mobile-menu-title-tablet-line-height: 59px;
+  --hero-suptitle-tablet-line-height: 23px;
+  --hero-title-tablet-line-height: 13px;
+  --products-suptitle-tablet-line-height: 27px;
+  --products-title-tablet-line-height: 43px;
+  --hero-title-desktop-line-height: 48px;
+  --products-title-desktop-line-height: 45px;
+  --card-description-desktop-line-height: 28px;
+  --about-accent-desktop-line-height: 71px;
+  --customer-review-desktop-line-height: 30px;
+  --contacts-accent-desktop-line-height: 29px;
+
+  --secondary-letter-spacing: 0.04em;
+  --copyright-tablet-letter-spacing: 0.02em;
+  --footer-accent-desktop-letter-spacing: 0.06em;
+}
