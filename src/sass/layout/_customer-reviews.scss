@@ -95,6 +95,11 @@ padding-bottom: 384px;}
 @media screen and (min-width:1200px) {
 background-image: url(../images/ice-cream-background/jpg/ice-cream-background-bottom/1200/ice-cream-background-bottom-1200@1x.jpg);
 padding-top: 456px;
-padding-bottom: 384px;
+padding-bottom: 384px;}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+background-image: 
+url(../images/ice-cream-background/jpg/ice-cream-background-bottom/1200/ice-cream-background-bottom-1200@2x.jpg);
 }
 }
