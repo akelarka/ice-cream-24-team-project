@@ -124,10 +124,6 @@
   gap: 16px;
 }
 
-.contacts-btn {
-  background-color: #84a178;
-}
-
 @media screen and (max-width: 767px) {
   .contacts-card:not(:last-child) {
     margin-bottom: 30px;
@@ -186,6 +182,11 @@
     color: #907e82;
   }
 
+  .contacts-list__link {
+    font-size: 14px;
+    line-height: 1.8571;
+  }
+
   .contacts-card__contacts-list {
     margin-top: 32px;
   }
@@ -223,5 +224,10 @@
     line-height: 1.875;
 
     color: var(--btn-disabled-color);
+  }
+
+  .contacts-list__link {
+    font-size: 16px;
+    line-height: 1.8125;
   }
 }
