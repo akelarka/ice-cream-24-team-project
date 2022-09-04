@@ -195,7 +195,7 @@
     top: -102px;
     left: 40px;
     background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-        box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
     border-radius: 50%;
     @media screen and (min-width: 768px) {
         height: 200px;
@@ -369,6 +369,11 @@
 }
 .ice-cream {
     background: var(--card-icecream-background-color);
+    
+}
+.ice-cream-bcg {
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 }
 
 .product-list {
@@ -425,6 +430,10 @@
 .ice-coffee {
     background: var(--card-icecoffee-background-color);
 }
+.ice-coffee-bcg {
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+}
 .product-list__item.milkshakes {
     background: var(--contacts-accent-text-color);
     border-radius: 24px;
@@ -434,12 +443,17 @@
 .milkshakes {
     background: var(--contacts-accent-text-color);
 }
+.milkshakes-bcg {
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+}
 .product-icon {
     width: 40px;
     height: 15px;
     
 }
-.product-icon:hover {
+.product-icon:hover,
+.product-icon:focus {
     width: 60px;
     height: 15px;
     fill: #fff;
@@ -489,8 +503,8 @@
     position: absolute;
     top: 0px;
     right: 0px;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     fill: currentColor;
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -498,7 +512,7 @@
     // transition-property: fill;
     transition-duration: 1000ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
+        // box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
         
 
     
@@ -528,7 +542,7 @@
     display: block;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 14px;
     line-height: 1.76;
     text-align: center;
