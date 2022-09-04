@@ -171,3 +171,52 @@
           margin-left: 0;
         }
 }
+.button-arrow {
+  position: relative;
+
+  min-width: 152px;
+  height: 42px;
+  padding: 12px 52px 12px 34px;
+
+  border: none;
+  background: #F8D24E;
+  border-radius: 10px;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #000000;
+
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::after {
+    content: "";
+    position: absolute;
+    transform: translate(-34px, 16px);
+    top: 0;
+    right: 0;
+
+    width: 12px;
+    height: 12px;
+
+    background-image: url(../images/arrow-black.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  &:hover {
+    background: #0A8817;
+  }
+
+  &:focus {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+}
