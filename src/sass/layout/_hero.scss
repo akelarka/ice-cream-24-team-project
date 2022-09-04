@@ -1,51 +1,51 @@
 .hero {
-    width: 100%;
-    background-color: #84a178;
+   width: 100%;
+   background-color: #84a178;
 }
 
 .hero__wrapper {
-    position: relative;
-    min-height: 590px;
-    background-image: url(../images/hero/dots-background/svg/dots-background-1200.svg);
-    background-repeat: no-repeat;
-    background-position: bottom;
+   position: relative;
+   min-height: 590px;
+   background-image: url(../images/hero/dots-background/svg/dots-background-1200.svg);
+   background-repeat: no-repeat;
+   background-position: bottom;
 
-    @media screen and (max-width: 767px) {
-        background-image: url(../images/hero/dots-background/svg/dots-background-480.svg);
-        background-repeat: no-repeat;
-        background-position: bottom;
-        min-height: 450px;
-    }
-
-    @media screen and (min-width: 768px) {
-        background-image: url(../images/hero/dots-background/svg/dots-background-768.svg);
-        background-repeat: no-repeat;
-        background-position: bottom;
-        min-height: 345px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        background-image: url(../images/hero/dots-background/svg/dots-background-1200.svg);
-        background-repeat: no-repeat;
-        background-position: bottom;
-        min-height: 590px;
-    }
-}
-
-.hero__title {
-    padding-top: 45px;
-    font-family: "Seymour One";
-    font-style: normal;
-    text-transform: uppercase;
-    color: #fcfcfc;
-
-   @media screen and (min-width: 1200px) {
-      font-weight: 400;
-      font-size: 26px;
-      line-height: 1.3;
+   @media screen and (max-width: 767px) {
+      background-image: url(../images/hero/dots-background/svg/dots-background-480.svg);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      min-height: 450px;
    }
 
    @media screen and (min-width: 768px) {
+      background-image: url(../images/hero/dots-background/svg/dots-background-768.svg);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      min-height: 345px;
+   }
+
+   @media screen and (min-width: 1200px) {
+      background-image: url(../images/hero/dots-background/svg/dots-background-1200.svg);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      min-height: 590px;
+   }
+}
+
+.hero__title {
+   font-family: "Seymour One";
+   font-style: normal;
+   text-transform: uppercase;
+   color: #fcfcfc;
+
+   @media screen and (min-width: 1200px) {
+      padding-top: 70px;
+      font-weight: 400;
+      font-size: 38px;
+      line-height: 1.3;
+   }
+
+   @media screen and (max-width: 1199px) {
       padding-top: 40px;
       font-family: "Seymour One";
       font-style: normal;
@@ -67,14 +67,14 @@
 }
 
 .hero__title-bold {
-    font-family: "Seymour One";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 1.3;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #fcfcfc;
+   font-family: "Seymour One";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 34px;
+   line-height: 1.3;
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
+   color: #fcfcfc;
 
    @media screen and (max-width: 1199px) {
       font-weight: 400;
@@ -85,11 +85,11 @@
    }
 }
 
-.hero-btn-set {
-    display: flex;
-    align-items: baseline;
+.hero__btn-set {
+   display: flex;
+   align-items: baseline;
 
-    @media screen and (min-width: 1200px) {
+   @media screen and (min-width: 1200px) {
       margin-top: 28px;
    }
 
@@ -102,7 +102,7 @@
    }
 }
 
-.hero-btn-set__btn {
+.hero__btn {
    width: 134px;
    height: 42px;
    font-family: "Roboto";
@@ -129,35 +129,45 @@
 }
 
 
-.hero-btn-set__link {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 8px;
-    line-height: 10px;
-    display: flex;
-    align-items: center;
-    text-decoration-line: underline;
-    color: #f8d24e;
-    margin-left: 8px;
-
-    @media screen and (max-width: 1199px) {
-      margin-left: 18px;
-}
-}
-
-.arrow {
-   width: 40px;
-   height: 20px;
-   margin-top: 22px;
-   fill: #fcfcfc;
+.hero__link {
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 600;
+   line-height: 1.2;
+   display: flex;
+   align-items: center;
+   text-decoration-line: underline;
+   color: #f8d24e;
+ 
 
    @media screen and (max-width: 1199px) {
-      margin-top: 10px;
+      margin-left: 18px;
+      font-size: 8px;
+   }
+
+@media screen and (min-width: 1200px) {
+      margin-left: 14px;
+      font-size: 14px;
    }
 }
 
-.tagline {
+.hero__description-set {
+   @media screen and (min-width: 1200px) {
+      margin-left: 240px;
+      margin-top: 95px;
+   }
+
+   @media screen and (max-width: 1199px) {
+      margin-top: 56px;
+      margin-left: 180px;
+   }
+
+   @media screen and (max-width: 767px) {
+      display: none;
+   }
+}
+
+.hero__tagline {
    width: 200px;
    font-family: "Montserrat";
    font-style: normal;
@@ -172,212 +182,95 @@
       font-size: 12px;
       line-height: 1.4;
    }
-
 }
 
-@media screen and (max-width: 424px) {
-
-    //    .hero-img{
-    //     position: absolute;
-    //     bottom: -75;
-    //     width: 100%;
-    //     height: 100%;
-    //     background-image:url(../images/hero/dots-background/dots-background-480@1x.webp);
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     background-position: center;
-    //    }
-   //  .department {
-   //      display: none;
-   //  }
-
-   //  .tagline {
-   //      display: none;
-   //  }
-    .hero-btn-set__btn:hover,
-    .hero-btn-set__btn:focus {
-        border: 2px solid #0a8817;
-    }
-
-    //    .bgd-img {
-    //     background-image:url(../images/hero/dots-background/dots-background-480@1x.webp);
-    //     background-repeat: no-repeat;
-    //     background-position:left 0  bottom 0;
-    //   }
-}
-
-.hero__description-set {
-   margin-left: 240px;
-   margin-top: 103px;
-   margin-bottom: 20px;
+.hero__arrow {
+   width: 40px;
+   height: 20px;
+   margin-top: 22px;
+   fill: #fcfcfc;
 
    @media screen and (max-width: 1199px) {
-      margin-top: 56px;
-      margin-left: 180px;
+      margin-top: 10px;
+   }
+}
+
+.hero__department {
+   position: absolute;
+   right: 0;
+   display: flex;
+   flex-direction: column;
+
+   @media screen and (min-width: 1199px) {
+      top: 75px;
    }
 
    @media screen and (max-width: 1199px) {
+      top: 45px;
+   }
+}
+
+.hero__department-wrapper {
+   align-items: flex-end;
+   text-align: right;
+
+   @media screen and (min-width: 1199px) {
+      margin-bottom: 16px;
+   }
+
+   @media screen and (max-width: 1199px) {
+      margin-bottom: 20px;
+   }
+}
+
+.hero__department-namber {
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 900;
+   line-height: 1.2;
+   text-align: right;
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
+   color: #000000;
+   margin-bottom: 4px;
+
+   @media screen and (min-width: 1199px) {
+      font-size: 46px;
+   }
+
+   @media screen and (max-width: 1199px) {
+      font-size: 28px;
+   }
+
+   @media screen and (max-width: 767px) {
       display: none;
    }
 }
 
-@media screen and (min-width: 425px) {
-   //  .hero {
-   //      width: 100%;
-   //      min-height: 450px;
-   //      background-color: #84a178;
-   //  }
+.hero__department-name {
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.2px;
+   text-align: right;
+   color: #ffffff;
+   padding-right: 2px;
 
-    // .hero-img{
-    //  position: absolute;
-    //  bottom: -75;
-    //  width: 100%;
-    //  height: 100%;
-    //  background-image:url(../images/hero/split-hero-image/split-hero-image-768@1x.webp);
-    //  background-repeat: no-repeat;
-    //  background-size: cover;
-    //  background-position: center;
-    // }
-    
+   @media screen and (min-width: 1199px) {
+      font-size: 14px;
+   }
 
-    .department {
-        position: absolute;
-        right: 32;
-        top: 22;
-    }
+   @media screen and (max-width: 1199px) {
+      font-size: 8px;
+   }
 
-    .department-namber {
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 900;
-        font-size: 28px;
-        line-height: 34px;
-        text-align: right;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: #000000;
-    }
-
-    .department-name {
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 8px;
-        line-height: 10px;
-        text-align: right;
-        color: #ffffff;
-    }
-
-    .arrow {
-        width: 40px;
-        height: 20px;
-        fill: #fcfcfc;
-    }
-
-    .hero-btn-set__btn:hover,
-    .hero-btn-set__btn:focus {
-        border: 2px solid #0a8817;
-    }
-
-    // .bgd-img {
-    //     background-image:url(../images/hero/dots-background/dots-background-768@1x.webp);
-    //     background-repeat: no-repeat;
-    //     background-position:left 0  bottom 0;
-    //   }
+   @media screen and (max-width: 767px) {
+      display: none;
+   }
 }
 
-@media screen and (min-width: 1200px) {
-    .hero__title {
-        padding-top: 45px;
-        font-family: "Seymour One";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 38px;
-        line-height: 1.3;
-        text-transform: uppercase;
-        color: #fcfcfc;
-    }
-
-    .hero__title-bold {
-        font-family: "Seymour One";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 38px;
-        line-height: 1.3;
-        text-transform: uppercase;
-        color: #fcfcfc;
-    }
-
-    
-
-    .hero-btn-set__btn:hover,
-    .hero-btn-set__btn:focus {
-        border: 2px solid #0a8817;
-    }
-
-    .hero-btn-set__link {
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 17px;
-        display: flex;
-        align-items: center;
-        text-decoration-line: underline;
-        color: #f8d24e;
-        margin-left: 34px;
-    }
-
-   //  .tagline {
-   //      width: 151px;
-   //      height: 85px;
-   //      font-family: "Montserrat";
-   //      font-style: normal;
-   //      font-weight: 400;
-   //      font-size: 12px;
-   //      line-height: 140%;
-   //      color: #ffffff;
-        
-   //  }
-
-    .department {
-        position: absolute;
-        right: 16;
-        top: 48;
-    }
-
-    .department-namber {
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 900;
-        font-size: 28px;
-        line-height: 34px;
-        text-align: right;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: #000000;
-    }
-
-    .department-name {
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 8px;
-        line-height: 10px;
-        text-align: right;
-        color: #ffffff;
-    }
-
-    
-
-    // .bgd-img {
-    //     background-image:url(../images/hero/dots-background/dots-background-1200@1x.webp);
-    //     background-repeat: no-repeat;
-    //     background-position: left 0 bottom 0;
-    //   }
-}
-
-.ice-cream-plate-picture {
+.hero__ice-cream-plate {
    display:block;
    position: absolute;
    bottom: 65px;
@@ -398,7 +291,7 @@
    
 }
 
-.main-ice-cream-picture {
+.hero__main-ice-cream {
    position: absolute;
 
    @media screen and (min-width: 1200px) {
