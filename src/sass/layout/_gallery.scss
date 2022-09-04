@@ -1,0 +1,16 @@
+.section-gallery {
+    background-image: url(../images/ice-cream-background/svg/ice-cream-background-bottom-480.svg);
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/ice-cream-background/svg/ice-cream-background-bottom-768.svg);
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/ice-cream-background/svg/ice-cream-background-bottom-1200.svg);
+    }
+}
+
+.container__gallery {
+    margin-left: auto;
+    margin-right: auto;
+}
