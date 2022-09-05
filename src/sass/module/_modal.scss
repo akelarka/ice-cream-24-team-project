@@ -1,0 +1,176 @@
+.backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(89, 11, 214, 0.2);
+    transition: opacity 1000ms, visibility 1000ms;
+    
+}
+.modal {
+    z-index: 5;
+    padding: 40px;
+    width: 528px;
+    min-height: 600px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border: solid 4px #f8d24e;
+    border-radius: 10px;
+    
+    position: absolute;
+    top: 70px;
+    left: -10%;
+    transform: scale(1) translateX(100%);
+    transform: translate(-50%, -50%);
+    transition: transform 1000ms;
+
+
+    @media screen and (min-width: 768px) {
+        // width: 450px;
+        top: 70px;
+        left: -39%;
+    }
+
+    @media screen and (min-width:1200px) {
+        top: 70px;
+            left: -17%;
+    }
+}
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal-title {
+    position: ablosute;
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 50px;
+    color: #131313;
+    top: 32px;
+    left: 50%;
+        
+}
+.modal-title::before {
+            content: " ";
+            height: 200px;
+            width: 200px;
+            background: linear-gradient(rgba(156, 190, 143, .7), rgba(156, 190, 143, .7)), #d9d9d9;
+            border-radius: 50%;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+            
+            box-shadow: 0 5.34219px 20.0332px rgb(10 136 23 / 25%);
+}
+
+.modal-title::after {
+    content: " ";
+    height: 200px;
+    width: 200px;
+    background-image: url(../images/products/ice-coffee-480@1x.webp);
+    border-radius: 50%;
+    position: absolute;
+    top: 140px;
+    left: 150px;
+
+    box-shadow: 0 5.34219px 20.0332px rgb(10 136 23 / 25%);
+}
+.backdrop.is-hidden .modal {
+    transform: scale(1.5) translateX(100%);
+    transition: transform 1000ms;
+}
+
+.modal-close {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
+
+.modal-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    position: relative;
+    text-align: start;
+    transition: border-color 250ms cubic-bezier (0.4, 0, 0.2, 1);
+
+}
+.modal-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--secondary-text);
+    margin-bottom: 4px;
+}
+.modal-field input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 40px;
+    outline-color: var(--accent-color);
+    width: 100%;
+    // padding-left: 42px;
+
+    @media screen and (min-width:1200px) {
+        // padding-left: 42px;
+    }
+}
+.modal-input {
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    outline: none;
+}
+.about-pic {
+    width: 130px;
+    
+}
+.pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc((100% - 66px) / 3);
+    
+    
+}
+.prod-pic {
+    gap: 33px;
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: wrap;
+    
+}
+
+.form {
+    margin-top: 250px;
+}
+
+.ingredients__value {
+    border-radius: 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: #131313;
+    background-color: #9CBE8F;
+}
