@@ -1,22 +1,22 @@
 .page-footer {
   background-color: #84a178;
 
-  padding-top: 120px;
+  // padding-top: 120px;
 
-  @media screen and (max-width: 767px) {
-    padding-top: 38px;
-  }
+  // @media screen and (max-width: 767px) {
+  //   padding-top: 38px;
+  // }
 
-  @media screen and (max-width: 1199px) {
-    padding-top: 40px;
-  }
+  // @media screen and (max-width: 1199px) {
+  //   padding-top: 40px;
+  // }
 }
 
 .footer-content {
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     margin-bottom: 32px;
   }
 
@@ -121,10 +121,10 @@
 .social-networks {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 46px;
+  margin-bottom: 32px;
 
   @media screen and (min-width: 1200px) {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   @media screen and (max-width: 767px) {
