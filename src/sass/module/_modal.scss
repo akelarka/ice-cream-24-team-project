@@ -283,6 +283,12 @@
     border: Solid #84A178;
     border-radius: 10px;
 
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: #131313;
+
     &::placeholder {
         font-family: 'Montserrat';
         font-weight: 400;
@@ -295,10 +301,12 @@
     .form-field {
         height: 42px;
         padding: 11px 16px;
+        font-size: 14px;
+        line-height: 140%;
         
         &::placeholder {
-                font-size: 14px;
-                line-height: 140%;
+            font-size: 14px;
+            line-height: 140%;
             }
     }
 }
