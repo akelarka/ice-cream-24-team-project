@@ -96,16 +96,19 @@
 }
 
 .about__img {
-  position: unset;
+  width: 278px;
   display: block;
   position: absolute;
   margin-top: 21px;
 
   @media screen and (min-width: 768px) {
-        margin-top: 25.88px;
-}
+    margin-top: 25.88px;
+    width: 330px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-top: 39px;
+    width: 500px;
   }
 }
 
