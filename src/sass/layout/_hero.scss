@@ -73,6 +73,7 @@
 }
 
 .hero__title-bold {
+   display: block;
    font-family: var(--secondary-font-family);
    font-weight: 400;
    font-size: 34px;
@@ -103,7 +104,7 @@
    }
 
    @media screen and (max-width: 767px) {
-      margin-top: 32px;
+      margin-top: 27px;
    }
 }
 
@@ -178,18 +179,6 @@
    }
 }
 
-.hero__department-wrapper {
-   text-align: right;
-
-   @media screen and (min-width: 1199px) {
-      margin-bottom: 16px;
-   }
-
-   @media screen and (max-width: 1199px) {
-      margin-bottom: 20px;
-   }
-}
-
 .hero__department-namber {
    font-family: var(--primary-font-family);
    font-style: normal;
@@ -234,6 +223,17 @@
 
    @media screen and (max-width: 767px) {
       display: none;
+   }
+}
+
+.hero__cafes {
+
+   @media screen and (min-width: 1199px) {
+      margin-bottom: 16px;
+   }
+
+   @media screen and (max-width: 1199px) {
+      margin-bottom: 20px;
    }
 }
 
