@@ -1,16 +1,26 @@
-.section-gallery {
-    background-image: url(../images/ice-cream-background/svg/ice-cream-background-bottom-480.svg);
-
-    @media screen and (min-width: 768px) {
-        background-image: url(../images/ice-cream-background/svg/ice-cream-background-bottom-768.svg);
-    }
-
-    @media screen and (min-width: 1200px) {
-        background-image: url(../images/ice-cream-background/svg/ice-cream-background-bottom-1200.svg);
-    }
+.container__gallery {
+    position: relative;
 }
 
-.container__gallery {
+.image-gallery {
+    position: absolute;
+
+    top: 0;
+    left: 20px;
+    transform: translateY(-24px);
+
     margin-left: auto;
     margin-right: auto;
+}
+@media screen and(min-width:768px) {
+    .image-gallery {
+        left: 30px;
+        transform: translateY(-164px);
+    }  
+}
+@media screen and(min-width:1200px) {
+    .image-gallery {
+        left: 100px;
+        transform: translateY(-94px);
+    }
 }
