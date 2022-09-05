@@ -58,6 +58,15 @@
     border: none;
     background-color: transparent;
     background-size: 100%;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        fill: #0A8817;
+    }
 }
  @media screen and (min-width: 768px) {
     .button-close-modal {
