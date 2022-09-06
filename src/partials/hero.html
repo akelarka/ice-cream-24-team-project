@@ -1,21 +1,26 @@
 <section class="hero">
   <div class="hero__wrapper container">
-    <h1 class="hero__title">ice cream<br>made with<span class="hero__title-bold">passion</span>
+    <h1 class="hero__title">ice cream<br>made with<br><span class="hero__title-bold">passion</span>
     </h1>
     <div class="hero__btn-set">
-      <button class="button-border hero__btn" type="button">Products</button>
-      <a class="button-text hero__link">How it's made?</a>
+      <button class="button-border hero__btn" type="button" href="#products">Products</button>
+      <a class="button-text hero__link" href="#about">How it's made?</a>
     </div>
     <div class="hero__description-set">
       <p class="hero__tagline">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
         do eiusmod tempor
         incididunt ut labore et</p>
-      <a>
-        <svg class="hero__arrow">
-          <use href="./images/sprite.svg#arrow" width="40" class=""></use>
-        </svg>
-      </a>
+      <button class="hero-btn " type="button" data-prod-open2>
+         <svg class="hero-icon">
+        <use href="./images/sprite.svg#arrow"></use>
+    </svg> </button>
+
+<div class="hero-menu is-hidden__product" data-prod2>
+    <span class="hero-text"> Get all your favorite Ice Cream flavors delivered right to your door within <br><span class="hero-text__bold">10 minutes!</span>
+    </span>
     </div>
+
+    
     <ul class="list hero__department">
       <li class="hero__department-namber">16</li>
       <li class="hero__department-name hero__cafes">cafes</li>
@@ -48,4 +53,5 @@
                  ./images/hero/main-ice-cream-1200@3x.png 3x" />
     </picture>
   </div>
+  <div id="topNubex"><img src="./images/hero/main-ice-cream-480@1x.png" alt="scrollup" /></div>
 </section>
