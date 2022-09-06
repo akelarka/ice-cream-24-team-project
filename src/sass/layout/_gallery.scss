@@ -3,9 +3,20 @@ position: relative;}
 
 .gallery__picture {
 position: absolute;
+display: block;
+height: auto;
 top: 0%;
 left: 50%;
 transform: translate(-50%, 0%);
+cursor: pointer;
+
+animation-name: Appearance;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-direction:reverse;
+animation-timing-function: cubic-bezier(.1, -.6, .2, 0);
+
+
 
 @media screen and (max-width: 767px) {
 margin-top: -24px;
@@ -16,3 +27,13 @@ width: 704px;}
 @media screen and (min-width: 1200px) {
 margin-top: -94px;
 width: 1013px;}}
+
+// Animation
+@keyframes Appearance{
+    
+0% {opacity: 0.2;}
+
+100% {opacity: 1}}
+
+          
+
