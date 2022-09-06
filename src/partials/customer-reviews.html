@@ -5,16 +5,19 @@
         <div class="carousel">
             <div class="carousel__item">
                 <picture class="photo-review">
-                    <source media="(min-width: 1200px)"
-                        srcset="./images/customer-reviews/emily-review-1200@1x.webp,./images/customer-reviews/emily-review-1200@2x.webp, ./images/customer-reviews/emily-review-1200@3x.webp"
-                        type="image/jpg" />
-                    <source media="(min-width: 768px)"
-                        srcset="./images/customer-reviews/emily-review-768@1x.webp, ./images/customer-reviews/emily-review-768@2x.webp,./images/customer-reviews/emily-review-768@3x.webp"
-                        type="image/jpg" />
-                    <source media="(max-width: 767px)"
-                        srcset="./images/customer-reviews/emily-review-480@1x.webp, ./images/customer-reviews/emily-review-480@2x.webp, ./images/customer-reviews/emily-review-480@3x.webp"
-                        type="image/jpg" />
-                    <img src="./images/customer-reviews/emily-review-1200@1x.webp" alt="Дівчина" class="client__photo">
+                    <source srcset="./images/customer-reviews/emily-review-480@1x.webp 1x, ./images/customer-reviews/emily-review-480@2x.webp 2x,
+                                                    ./images/customer-reviews/emily-review-480@3x.webp  3x"
+                        media="(max-width: 767px)" type="image/webp" />
+                    <source srcset="./images/customer-reviews/emily-review-768@1x.webp 1x, ./images/customer-reviews/emily-review-768@2x.webp 2x,
+                                                          ./images/customer-reviews/emily-review-1200@3x.webp 3x"
+                        media="(min-width: 768px)" type="image/webp" />
+                    <source srcset="./images/customer-reviews/emily-review-768@1x.webp 1x, ./images/customer-reviews/emily-review-1200@2x.webp 2x,
+                                                                ./images/customer-reviews/emily-review-1200@3x.webp 3x"
+                        media="(min-width: 1200px)" type="image/webp" />
+                    <img class="client__photo" src="./images/customer-reviews/emily-review-1200@1x.webp" alt="Дівчина"
+                        srcset="./images/customer-reviews/emily-review-1200@1x.webp 1x,
+                                     ./images/customer-reviews/emily-review-1200@1x.webp 2x,
+                                     ./images/customer-reviews/emily-review-1200@1x.webp 3x" />
                 </picture>
                 <article class="text-review">
                     <h2 class="visually-hidden">Client Review</h2>
@@ -27,11 +30,10 @@
             </div>
             <div class="carousel__item">
                 <picture class="photo-review">
-                    <source media="(min-width: 320px)"
-                        srcset="./images/customer-reviews/bryan-review@1x.webp, ./images/customer-reviews/bryan-review@2x.webp, ./images/customer-reviews/bryan-review@3x.webp"
-                        type="image/jpg" />
-                    <img src="./images/customer-reviews/emily-review-1200@1x.webp" alt="Чоловік з морозивом"
-                        class="client__photo">
+                    <img class="client__photo" src="./images/customer-reviews/bryan-review@1x.webp"
+                        alt="Чоловік з морозивом" srcset="./images/customer-reviews/bryan-review@1x.webp 1x,
+                                                     ./images/customer-reviews/bryan-review@2x.webp 2x,
+                                                     ./images/customer-reviews/bryan-review@3x.webp 3x" />
                 </picture>
                 <article class="text-review">
                     <h2 class="visually-hidden">Client Review</h2>
@@ -42,11 +44,11 @@
             </div>
             <div class="carousel__item">
                 <picture class="photo-review">
-                    <source media="(min-width: 320px)"
-                        srcset="./images/customer-reviews/diana-review@1x.webp, ./images/customer-reviews/diana-review@2x.webp, ./images/customer-reviews/diana-review@3x.webp"
-                        type="image/jpg" />
-                    <img src="./images/customer-reviews/emily-review-1200@1x.webp" alt="Дівчина з морозивом"
-                        class="client__photo">
+                    <img class="client__photo" src="./images/customer-reviews/diana-review@1x.webp"
+                        alt="Дівчина з морозивом"
+                        srcset="./images/customer-reviews/diana-review@1x.webp 1x,
+                                                                     ./images/customer-reviews/diana-review@2x.webp 2x,
+                                                                     ./images/customer-reviews/diana-review@3x.webp 3x" />
                 </picture>
                 <article class="text-review">
                     <h2 class="visually-hidden">Client Review</h2>
@@ -59,11 +61,11 @@
             </div>
             <div class="carousel__item">
                 <picture class="photo-review">
-                    <source media="(min-width: 320px)"
-                        srcset="./images/customer-reviews/sam-review@1x.webp, ./images/customer-reviews/sam-review@2x.webp, ./images/customer-reviews/sam-review@3x.webp"
-                        type="image/jpg" />
-                    <img src="./images/customer-reviews/emily-review-1200@1x.webp" alt="Хлопець в кепці з морозивом"
-                        class="client__photo">
+                    <img class="client__photo" src="./images/customer-reviews/sam-review@1x.webp"
+                        alt="Хлопець в кепці з морозивом"
+                        srcset="./images/customer-reviews/sam-review@1x.webp 1x,
+                                                                                     ./images/customer-reviews/sam-review@2x.webp 2x,
+                                                                                     ./images/customer-reviews/sam-review@3x.webp 3x" />
                 </picture>
                 <article class="text-review">
                     <h2 class="visually-hidden">Client Review</h2>
