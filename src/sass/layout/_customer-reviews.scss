@@ -44,7 +44,14 @@ margin-bottom: 32px;}
     padding: 39px 109px 47px 109px;
     width: 968px;
     height: 138px;}
+
+    transition: ease-in-out 250ms;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
    
+}
 }
 .text-review-item{
 @media screen and (min-width:768px) {
@@ -88,6 +95,8 @@ background-image:
 url(../images/ice-cream-background/jpg/ice-cream-background-bottom/1200/ice-cream-background-bottom-1200@2x.jpg);
 }
 }
+
+
 // Slide style
 .slick-arrow{
     position: absolute;
