@@ -1,3 +1,5 @@
+@import "../../../node_modules/slick-carousel/slick/slick.scss";
+// Elements style
 .photo-review{
     display: block;
     width: 85px;
@@ -59,20 +61,7 @@ margin-bottom: 14px;
 }
 @media screen and (min-width:768px) {
 margin-bottom: 32px;}}
-.pagination{
-    display: flex;
-    justify-content: center;
-    gap:18px;}
-.pagination-link{
-display: block;
-text-decoration: none;
-width: 12px;
-height: 12px;
-border-radius: 50%;
-background-color: var(--decorate-dots-disabled-color);}
-.active{
-background-color: var(--main-background-color);
-}
+
 .section-review{
 background-repeat: no-repeat;
 background-position: center;
@@ -99,3 +88,50 @@ background-image:
 url(../images/ice-cream-background/jpg/ice-cream-background-bottom/1200/ice-cream-background-bottom-1200@2x.jpg);
 }
 }
+// Slide style
+.slick-arrow{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 0;
+    &::before{
+    content: "";
+    display: table;}}
+
+// Pagination
+.slick-dots{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    margin-bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    li{
+    display: inline-block;
+    margin: 0 9px;
+    }
+    button{
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--decorate-dots-disabled-color);
+    font-size: 0;
+    &:hover, &:focus{
+        opacity: 0.8;
+        background-color: var(--main-background-color);
+    }
+}
+    }
+.slick-active{
+        button{
+       background-color: var(--main-background-color);}
+    }
+
