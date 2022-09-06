@@ -108,7 +108,7 @@
   }
 }
 
-.wrapper-form-field {
+.wrapper-form-field-read {
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -116,8 +116,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .wrapper-form-field {
-    width: 568px;
+  .wrapper-form-field-read {
+    width: 100%;
     gap: 32px;
   }
 }
