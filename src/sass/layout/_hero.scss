@@ -346,9 +346,9 @@
 
    background-color: var(--main-background-color);
    @media screen and (max-width:1199px){
-      bottom: 175px;
+      bottom: 143px;
       padding: 0;
-      left: 215px;
+      left: 212px;
    }
       
    
@@ -359,7 +359,7 @@
    font-weight: 400;
    font-size: 14px;
    line-height: 1.4;
-   text-align: center;
+   text-align: left;
    letter-spacing: 0.04em;
    color: var(--primary-title-color);
    padding-left: 15px;
@@ -373,14 +373,14 @@
    .hero-text__bold{
       font-family: var(--primary-font-family);
    font-weight: 800;
-   font-size: 30px;
-   line-height: 2;
-   text-align: center;
+   font-size: 22px;
+   line-height: 1.2;
+   text-align: left;
    letter-spacing: 0.04em;
-   color: red;
+   color: white;
    @media screen and (max-width:1199px){
       font-weight: 800;
-   font-size: 30px;
+   font-size: 22px;
    line-height: 1;
    }
    }
