@@ -456,7 +456,7 @@
 .product-icon:focus {
     width: 60px;
     height: 15px;
-    fill: #fff;
+    fill: #0a8817;;
     transition-duration: 300ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -486,7 +486,7 @@
     left: 0;
     text-align: center;
     width: 100%;
-    height: 150px;
+    height: 100%;
     
     border-radius: 24px;
 
@@ -518,36 +518,111 @@
     
 }
 .close-prod-btn {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        width: 30px;
-        height: 30px;
-        background-color: transparent;
-        border-color: transparent;
-        transition-duration: 300ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    position: absolute;
+    top: 485px;
+        right: 163px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-color: transparent;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         
-            
+    @media screen and (max-width: 1199px) {
+        top: 485px;
+        right: 88px;
+    }
+
             
 }
 
 .close-icon {
     &:hover,
     &:focus {
-        fill: #fff;
+        fill: #0a8817;;
     }
 }
 .product-text {
     display: block;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.76;
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--card-description-color);
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+.ingredients-container  {
+    // position: relative;
+    margin-top: -232px;
+    display: flex;
+    @media screen and (min-width: 1200px)
+    {
+        margin-top: -177px;
+    }
+}
+.ingredients-list {
+    width: 100%;
+    // margin-top: 255px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    @media screen and (min-width: 1200px) {
+        gap: 20px;
+    }
+}
+
+.ingredients-list__item {
+    // position: relative;
+    width: 53px;
+    height: 90px;
+    border-radius: 40px;
+    border: solid 2px #eee8aa;;
+    // width:calc((100% - 60px) / 3);
+}
+.ingredients__value {
+    position: relative;
+    // top: 324px;
+    border-radius: 50px;
+    display: flex;
+    width: 50px;
+    height: 46px;
+    color: #131313;
+    background-color: #eee8aa;;
+    justify-content: center;
+    align-items: center;
+}
+.ingredients-nutrion {
+    position: absolute;
+    top: 164px;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 1200px)
+    {
+        top: 190px;
+    }
+        
+    
+}
+.second {
+    margin-top: 195px;
+    width: 215px;
+    display: flex;
+    flex-direction: column;
+}
+.reciept {
+    position: absolute;
 }
