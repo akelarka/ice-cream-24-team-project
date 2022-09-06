@@ -519,8 +519,8 @@
 }
 .close-prod-btn {
     position: absolute;
-    top: 485px;
-        right: 163px;
+    top: 470px;
+    right: 125px;
     width: 30px;
     height: 30px;
     background-color: transparent;
@@ -528,9 +528,13 @@
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
         top: 485px;
-        right: 88px;
+        right: 97px;
+    }
+    @media screen and (min-width: 1200px) {
+        top: 485px;
+        right: 163px;
     }
 
             
