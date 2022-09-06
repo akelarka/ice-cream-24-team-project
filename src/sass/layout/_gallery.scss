@@ -1,19 +1,18 @@
 .section-gallery {
-    position: relative;
-}
+position: relative;}
 
 .gallery__picture {
-    position: absolute;
+position: absolute;
+top: 0%;
+left: 50%;
+transform: translate(-50%, 0%);
 
-    @media screen and (min-width: 1200px) {
-        margin-top: -80px;
-    }
-
-    @media screen and (min-width: 768px) {
-        margin-top: -130px;
-    }
-
-    @media screen and (max-width: 767px) {
-        margin-top: -25px;
-    }
-}
+@media screen and (max-width: 767px) {
+margin-top: -24px;
+width:279px;}
+@media screen and (min-width: 768px) {
+ margin-top: -164px;
+width: 704px;}
+@media screen and (min-width: 1200px) {
+margin-top: -94px;
+width: 1013px;}}
