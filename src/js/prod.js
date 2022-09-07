@@ -9,7 +9,7 @@
     openProdBtn3: document.querySelector('[data-prod-open3]'),
     closeProdBtn3: document.querySelector('[data-prod-close3]'),
     prod3: document.querySelector('[data-prod3]'),
-    openProdBtn3: document.querySelector('[data-prod-open4]'),
+    openProdBtn4: document.querySelector('[data-prod-open4]'),
     closeProdBtn4: document.querySelector('[data-prod-close4]'),
     prod4: document.querySelector('[data-prod4]'),
     };
