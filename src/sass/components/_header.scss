@@ -111,3 +111,28 @@
     display: none;
   }
 }
+
+
+.mobile-menu-open .mobile-menu__close-icon {
+  display: none;
+}
+
+.mobile-menu-open.is-open .mobile-menu__close-icon {
+  display: block;
+}
+
+.mobile-menu-open.is-open .mobile-menu-svg {
+  display: none;
+}
+
+.mobile-menu-open .mobile-menu-svg {
+  display: block;
+}
+
+.mobile-menu {
+  margin-top: 50px;
+}
+
+.logo-and-burger {
+  display: none;
+}

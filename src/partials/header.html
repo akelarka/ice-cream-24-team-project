@@ -24,9 +24,10 @@
       </ul>
     </nav>
     <div class="header-burg-and-btn">
-      <button type="button" class="mobile-menu-open" data-menu-open>
-        <svg class="mobile-menu-svg" width="32" height="32">
-          <use href="../src/images/sprite.svg#icon-Burger"></use>
+      <button type="button" class="mobile-menu-open is-open" data-menu-open data-menu-close>
+        <svg width="32" height="32">
+          <use class="mobile-menu-svg" href="../src/images/sprite.svg#close-button"></use>
+          <use class="mobile-menu__close-icon" href="../src/images/sprite.svg#icon-Burger"></use>
         </svg>
       </button>
       <button class="button-arrow hidden" type="button" data-modal-window-open>
@@ -42,11 +43,7 @@
             <use href="../src/images/sprite.svg#logo"></use>
           </svg>
         </a>
-        <button type="button" class="mobile-menu__close-btn" data-menu-close>
-          <svg class="mobile-menu__close-icon" width="32" height="32">
-            <use href="../src/images/sprite.svg#close-button"></use>
-          </svg>
-        </button>
+
       </div>
 
       <ul class="list mobile-menu__menu">

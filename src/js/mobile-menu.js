@@ -1,17 +1,30 @@
+// (() => {
+//   const refs = {
+//     openMenuBtn: document.querySelector('[data-menu-open]'),
+//     closeMenuBtn: document.querySelector('[data-menu-close]'),
+//     menu: document.querySelector('[data-menu]'),
+//   };
+
+//   const links = document.querySelectorAll('.mobile-menu__menu-link');
+//   links.forEach(element => element.addEventListener('click', toggleModal));
+
+//   refs.openMenuBtn.addEventListener('click', toggleModal);
+//   refs.closeMenuBtn.addEventListener('click', toggleModal);
+
+//   function toggleModal() {
+//     refs.menu.classList.toggle('is-open');
+//   }
+// })();
+
+
 (() => {
-  const refs = {
-    openMenuBtn: document.querySelector('[data-menu-open]'),
-    closeMenuBtn: document.querySelector('[data-menu-close]'),
-    menu: document.querySelector('[data-menu]'),
-  };
+  const menuBtnRef = document.querySelector("[data-menu-open]");
+  const mobileMenuRef = document.querySelector("[data-menu]");
 
-  const links = document.querySelectorAll('.mobile-menu__menu-link');
-  links.forEach(element => element.addEventListener('click', toggleModal));
+  menuBtnRef.addEventListener("click", () => {
 
-  refs.openMenuBtn.addEventListener('click', toggleModal);
-  refs.closeMenuBtn.addEventListener('click', toggleModal);
+    menuBtnRef.classList.toggle("is-open");
 
-  function toggleModal() {
-    refs.menu.classList.toggle('is-open');
-  }
+    mobileMenuRef.classList.toggle("is-open");
+  });
 })();
