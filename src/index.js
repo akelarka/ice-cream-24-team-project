@@ -3,4 +3,3 @@ import './js/mobile-menu';
 import './js/scrollup';
 import './js/slide';
 import './js/prod';
-import './js/hero-btn';
