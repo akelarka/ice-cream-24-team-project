@@ -21,7 +21,7 @@
     refs.openProdBtn3.addEventListener('click', toggleProd3);
     refs.closeProdBtn3.addEventListener('click', toggleProd3);
     refs.openProdBtn4.addEventListener('click', toggleProd4);
-    // refs.closeProdBtn4.addEventListener('click', toggleProd4);
+    refs.closeProdBtn4.addEventListener('click', toggleProd4);
 
      function toggleProd() {
      refs.prod.classList.toggle('is-hidden__product');
