@@ -12,10 +12,10 @@
     cursor: pointer;
 
     animation-name: Appearance;
-    animation-duration: 3s;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.9,.7,.2,.9);
     animation-iteration-count: infinite;
-    animation-direction: reverse;
-    animation-timing-function: cubic-bezier(.1, -.6, .2, 0);
+    animation-direction: alternate;
 
 
 
