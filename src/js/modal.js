@@ -12,3 +12,4 @@
     refs.modalwindow.classList.toggle("is-hidden");
   }
 })();
+
