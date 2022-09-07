@@ -13,7 +13,7 @@
     refs.closeProdBtn3.addEventListener('click', toggleProd3);
 
      function toggleHero() {
-     refs.prod2.classList.toggle('is-hidden__hero');
+     refs.hero.classList.toggle('is-hidden__hero');
      }
               
 })();
