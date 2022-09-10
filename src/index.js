@@ -3,4 +3,4 @@ import './js/modal';
 import './js/scrollup';
 import './js/slide';
 import './js/prod';
-import './js/slick.min';
+import './js/slick';
