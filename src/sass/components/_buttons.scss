@@ -8,7 +8,7 @@
     padding: 12px 52px 12px 34px;
     
     border: none;
-    background: #F8D24E;
+    background: var(--btn-default-color);
     border-radius: 10px;
    
     font-family: 'Montserrat';
@@ -18,21 +18,21 @@
     text-align: center;
     color: #000000;
 
-    transition-property: background;
+    transition-property: background, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    
     &::after {
         content: "";
         position: absolute;
-        transform: translate(-34px, 16px);
+        transform: translate(-34px, 15px);
         top: 0;
         right: 0;
         
         width: 12px;
         height: 12px;
         
-        background-image: url(../images/arrow-black.svg);
+        background-image: url(../images/svg-icon/arrow-black.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
@@ -42,58 +42,66 @@
         background: #0A8817;
     }
     &:focus{
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 1.2;
+        color: #FCFCFC;
+        background: #0A8817;
+        &::after {
+                background-image: url(../images/svg-icon/arrow-white-new.svg); 
+            }
     }
 
 }
 
 
-/*Кнопка с белым текстом и белой стрелкой использовать для (Franchise)*/
+/*Кнопка  с рамкой и  стрелкой использовать для (Franchise)*/
 .button-arrow-border {
     position: relative;
    
     min-width: 196px;
     height:42px;
-    padding: 12px 64px 12px 46px; 
+    padding: 11px 64px 12px 46px; 
 
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 14px;
     line-height: 1.29;
     text-align: center;
-    color: #fff;
+    color: #000000;
 
-    border: 2px solid #F8D24E;
-    background: #AEC6A5;
+    border: 2px solid var(--btn-default-color);
+    background: var(--main-background-color);
     border-radius: 10px;
 
     
-    transition-property: border;
+    transition-property: border, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &::after {
         content: "";
         position: absolute;
-        transform: translate(-46px, 16px);
+        transform: translate(-46px, 14px);
         top: 0;
         right: 0;
         width: 12px;
         height: 12px;
-        background-image: url(../images/arrow-white-new.svg);
+        background-image: url(../images/svg-icon/arrow-black.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
+
+        transition-property: background-image;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &:hover{
         border: 2px solid #0A8817;
     }
     &:focus{
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 1.2;
+        border: 2px solid #0A8817;
+        color: #FCFCFC;
+        &::after {
+            background-image: url(../images/svg-icon/arrow-white-new.svg);
+            }
     }
     
 }
@@ -105,8 +113,8 @@
     height: 24px;
     padding: 6px 8px;
 
-    background: #AEC6A5;
-    border: 2px solid #F8D24E;
+    background: var(--main-background-color);
+    border: 2px solid var(--btn-default-color);
     border-radius: 8px;
 
 
@@ -117,14 +125,15 @@
     text-align: center;
     color: #000000;
 
-    transition-property: border;
+    transition-property: border, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
+    &:hover{
         border: 2px solid #0A8817;
-        font-size: 9px;
+    }
+    &:focus{
+        color: #FCFCFC;
     }
 }
 
@@ -132,23 +141,12 @@
     .button-border {
         min-width: 134px;
         height: 42px;
-        padding: 12px 34px;
+        padding: 11px 34px 12px 34px;
 
 
         font-size: 14px;
         line-height: 1.29;
         border-radius: 10px;
-
-        &:hover {
-            border: 2px solid #0A8817;
-            font-size: 14px;
-        }
-
-        &:focus {
-            font-weight: 700;
-            font-size: 15px;
-            line-height: 1.2;
-        }
     }
 }
 
@@ -160,7 +158,7 @@
     line-height: 2;
     text-align: center;
     
-    color: #F8D24E;
+    color: var(--btn-default-color);
     background: inherit;
     text-decoration-line: underline;
     border: none;
@@ -168,12 +166,12 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover,
-        &:focus{
+        &:hover{
         color: #0A8817;
-        font-weight: 700;
-        font-size: 9px;
-        line-height: 1.22;
+        }
+
+        &:focus {
+        color: #FCFCFC;
         }
 }
 
@@ -181,15 +179,5 @@
     .button-text {
         font-size: 14px;
         line-height: 1.21;
-        &:hover{
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 1.21;
-         }
-         &:focus{
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 1.2;
-        }
     }
 }

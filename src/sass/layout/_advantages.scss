@@ -1,0 +1,96 @@
+
+.advantages {
+  background-color: var(--main-background-color);
+  padding-top: 20px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 204px;
+    padding-top: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 180px;
+    padding-top: 40px;
+  }
+}
+
+.advantages__list {
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.advantages__list-item {
+  width: 230px;
+  text-align: center;
+  margin: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 152px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 348px;
+  }
+}
+
+.advantages__icon {
+  margin: auto;
+  background-color: var(--btn-default-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.advantages__value {
+  font-family: 'Roboto';
+  color: var(--primary-text-color);
+  font-weight: var(--secondary-font-weight);
+  font-size: var(--about-accent-mobile-font-size);
+  line-height: var(--about-accent-mobile-line-height);
+  letter-spacing: var(--secondary-letter-spacing);
+  text-transform: uppercase;
+  margin-top: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: var(--mobile-menu-title-tablet-font-size);
+    line-height: var(--mobile-menu-title-tablet-line-height);
+  }
+}
+
+.advantages__text {
+  font-family: var(--primary-font-family);
+  color: var(--primary-text-color);
+  font-weight: var(--secondary-font-weight);
+  font-size: var(--input-font-size);
+  line-height: var(--primary-line-height);
+  margin-top: 16px;
+  margin-bottom: 18px;
+
+  @media screen and (min-width: 768px) {
+    font-size: var(--primary-font-size);
+    line-height: var(--secondary-line-height);
+    font-weight: var(--primary-font-weight);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: var(--secondary-font-size);
+    line-height: var(--card-description-desktop-line-height);
+    font-weight: var(--primary-font-weight);
+  }
+}
+
+.ice-cream-icon {
+  width: 36px;
+}
+
+.kettlebell {
+  width: 36px;
+}
+
+.cow {
+  width: 36px;
+}

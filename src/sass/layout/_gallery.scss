@@ -1,0 +1,48 @@
+.section-gallery {
+    position: relative;
+}
+
+.gallery__picture {
+    position: absolute;
+    display: block;
+    height: auto;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    cursor: pointer;
+
+    animation-name: Appearance;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.9,.7,.2,.9);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+
+
+    @media screen and (max-width: 767px) {
+        margin-top: -24px;
+        width: 279px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-top: -164px;
+        width: 704px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: -94px;
+        width: 1013px;
+    }
+}
+
+// Animation
+@keyframes Appearance {
+
+    0% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1
+    }
+}
