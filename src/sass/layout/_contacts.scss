@@ -1,17 +1,32 @@
 .contacts {
   background-color: var(--main-background-color);
-}
 
-.contacts__container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
 
-.contacts__list {
-  position: absolute;
-  transform: translateY(-368px) translateX(-10px);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &__list {
+    position: absolute;
+    transform: translateY(-368px) translateX(-10px);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+      & {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -8px;
+        transform: translateY(-322px) translateX(-15px);
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      & {
+        margin: -16px;
+        transform: translateY(-104px) translateX(-10px);
+      }
+    }
+  }
 }
 
 .contacts-card {
@@ -28,90 +43,115 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      width: calc((100% - 8px * 6) / 3);
+      margin: 8px;
+      padding: 40px 24px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      width: calc((100% - 16px * 6) / 3);
+      margin: 16px;
+      padding: 40px;
+    }
+  }
+
+  &__suptitle {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 0 23px;
+
+    font-family: var(--primary-font-family);
+    font-weight: var(--customer-data-font-weight);
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.8333;
+    letter-spacing: var(--secondary-letter-spacing);
+    text-transform: uppercase;
+    border-radius: 4px;
+
+    background-color: var(--btn-default-color);
+    color: var(--primary-text-color);
+  }
+
+  &__title {
+    margin-bottom: 8px;
+
+    font-family: var(--primary-font-family);
+    font-weight: var(--customer-data-font-weight);
+    font-size: 12px;
+    line-height: 1.8333;
+    letter-spacing: var(--secondary-letter-spacing);
+
+    color: var(--accent-text-color);
+  }
+
+  &__address {
+    display: inline-block;
+    margin-bottom: 24px;
+    font-family: var(--primary-font-family);
+    font-weight: var(--customer-data-font-weight);
+    font-size: 12px;
+    line-height: 1.8333;
+    letter-spacing: 0.04em;
+
+    color: var(--card-description-color);
+  }
+
+  &__shedule-list {
+    padding: 24px 0;
+    border-top: 1px solid var(--decorate-line-color);
+    border-bottom: 1px solid var(--decorate-line-color);
+  }
+
+  &__contacts-list {
+    margin-top: 24px;
+  }
+
+  &__link {
+    font-family: var(--primary-font-family);
+    font-weight: var(--customer-data-font-weight);
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: var(--card-description-color);
+  }
 }
 
-.contacts-card__suptitle {
-  display: inline-block;
-  margin-bottom: 20px;
-  padding: 0 23px;
+.shedule-list {
+  &__item {
+    margin-bottom: 8px;
+  }
 
-  font-family: var(--primary-font-family);
-  font-weight: var(--customer-data-font-weight);
-  text-align: center;
-  font-size: 12px;
-  line-height: 1.8333;
-  letter-spacing: var(--secondary-letter-spacing);
-  text-transform: uppercase;
-  border-radius: 4px;
+  &__date {
+    font-family: var(--primary-font-family);
+    font-weight: var(--customer-data-font-weight);
+    font-size: 12px;
+    line-height: 1.8333;
+    letter-spacing: var(--secondary-letter-spacing);
 
-  background-color: var(--btn-default-color);
-  color: var(--primary-text-color);
-}
+    color: var(--accent-text-color);
+  }
 
-.contacts-card__title {
-  margin-bottom: 8px;
+  &__time {
+    font-family: var(--primary-font-family);
+    font-weight: var(--customer-data-font-weight);
+    font-size: 12px;
+    line-height: 1.8333;
+    letter-spacing: var(--secondary-letter-spacing);
 
-  font-family: var(--primary-font-family);
-  font-weight: var(--customer-data-font-weight);
-  font-size: 12px;
-  line-height: 1.8333;
-  letter-spacing: var(--secondary-letter-spacing);
-
-  color: var(--accent-text-color);
-}
-
-.contacts-card__address {
-  margin-bottom: 24px;
-  font-family: var(--primary-font-family);
-  font-weight: var(--customer-data-font-weight);
-  font-size: 12px;
-  line-height: 1.8333;
-  letter-spacing: 0.04em;
-
-  color: var(--contacts-accent-text-color);
-}
-
-.contacts-card__shedule-list {
-  padding: 24px 0;
-  border-top: 1px solid var(--decorate-line-color);
-  border-bottom: 1px solid var(--decorate-line-color);
-}
-
-.shedule-list__item {
-  margin-bottom: 8px;
-}
-
-.shedule-list__date {
-  font-family: var(--primary-font-family);
-  font-weight: var(--customer-data-font-weight);
-  font-size: 12px;
-  line-height: 1.8333;
-  letter-spacing: var(--secondary-letter-spacing);
-
-  color: var(--accent-text-color);
-}
-
-.shedule-list__time {
-  font-family: var(--primary-font-family);
-  font-weight: var(--customer-data-font-weight);
-  font-size: 12px;
-  line-height: 1.8333;
-  letter-spacing: var(--secondary-letter-spacing);
-
-  color: var(--btn-disabled-color);
-}
-
-.contacts-card__contacts-list {
-  margin-top: 24px;
-}
-
-.contacts-list__link {
-  font-family: var(--primary-font-family);
-  font-weight: var(--customer-data-font-weight);
-  font-size: 12px;
-  line-height: 1.5;
-
-  color: var(--card-description-color);
+    color: var(--btn-disabled-color);
+  }
 }
 
 .contacts-btn-list {
@@ -123,26 +163,7 @@
   gap: 16px;
 }
 
-@media screen and (max-width: 767px) {
-  .contacts-card:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
 @media screen and (min-width: 768px) {
-  .contacts__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -8px;
-    transform: translateY(-322px) translateX(-15px);
-  }
-
-  .contacts-card {
-    width: calc((100% - 8px * 6) / 3);
-    margin: 8px;
-    padding: 40px 24px;
-  }
-
   .contacts-card__suptitle {
     margin-bottom: 32px;
     font-size: 16px;
@@ -199,11 +220,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .contacts__list {
-    margin: -16px;
-    transform: translateY(-104px) translateX(-10px);
-  }
-
   .contacts-card {
     width: calc((100% - 16px * 6) / 3);
     margin: 16px;
