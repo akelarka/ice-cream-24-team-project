@@ -61,6 +61,7 @@
 }
 
 .contacts-card__address {
+  display: inline-block;
   margin-bottom: 24px;
   font-family: var(--primary-font-family);
   font-weight: var(--customer-data-font-weight);
