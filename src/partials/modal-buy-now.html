@@ -1,22 +1,52 @@
 
-<div class="backdrop is-hidden" data-modal-window>
-<div class="modal_buy-now">
-    <button type="button" class="button-close-modal" data-modal-window-close><svg width="20" height="20"><use href="./images/sprite.svg#close-button"></use></svg>
-    </button>
-    <p class="label-form">Buy now</p>
-    <ul class="list prodacts-modal-list">
-        <li class="products-modal-item ise-cream-modal"><p class="product-name">ice cream</p></li>
-        <li class="products-modal-item ise-coffee-modal"><p class="product-name">ice coffee</p></li>
-        <li class="products-modal-item milkhake-modal"><p class="product-name">milkshake</p></li>
-    </ul>
+<div class="backdrop is-hidden" data-modal-buy_now>
+<div class="modal-input-fields modal_buy-now">
+    <button type="button" class="button-close-modal" data-moda-close-buy_now><svg width="20" height="20"><use href="./images/sprite.svg#close-button"></use></svg></button>
+    <p class="form-title">Buy now</p>
+        <div class="prodacts-modal-list">
         
-    <form class="form">
-        <div class="wrapper-form-field">
-        <input class="form-field" type="text" minlength="2" name="name" placeholder="Name" required>
-        <input class="form-field" type="tel" name="tel" placeholder="Phone" required>
-        <textarea class="form-field form-field__user-massege" name="user-message" placeholder="Comment"></textarea>
+            <input type="checkbox" id="iceCream" class="checkbox visually-hidden">
+            <div class="products-modal-item ise-cream-modal">
+            <label for="iceCream" class="product-name">ice cream</label>
+            </div>
+        
+
+        
+            <input type="checkbox" id="iceCoffee" class="checkbox visually-hidden">
+            <div class="products-modal-item ise-coffee-modal">
+            <label for="iceCoffee" class="product-name">ice coffee</label>
+            </div>
+        
+
+       
+            <input type="checkbox" id="milkshake" class="checkbox visually-hidden">
+            <div class="products-modal-item milkhake-modal">
+            <label for="milkshake" class="product-name">milkshake</label>
+            </div>
+        
         </div>
-        <button type="submit" class="button-submit">Submit</button>
-    </form>   
+        
+            <form class="form-wrapper">
+                <div class="form-wrapper__field">
+            
+                    <div class="wrapper-label-input">
+                        <input class="form-field" type="text" minlength="2" name="name" placeholder=" " required>
+                        <label class="title-field">Name</label>
+                    </div>
+            
+                    <div class="wrapper-label-input">
+                        <input class="form-field" type="tel" name="tel" placeholder=" " required>
+                        <label class="title-field">Phone</label>
+                    </div>
+            
+                    <div class="wrapper-label-input">
+                        <textarea class="form-field form-field__user-massege" name="user-message" placeholder=" "></textarea>
+                        <label class="title-field">Comment</label>
+                    </div>
+                </div>
+                <button type="submit" class="button-submit">Submit</button>
+            </form>
+    
+    
 </div>
 </div>
