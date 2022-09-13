@@ -12,7 +12,10 @@
 @import './components/mobile-menu';
 
 // All "Module" specific SASS partials
-@import './module/modal';
+@import './module/modal_main';
+@import './module/modal_buy-now';
+@import './module/modal_franchise';
+
 
 // All "Utils" specific SASS partials
 
